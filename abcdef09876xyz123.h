@@ -235,7 +235,8 @@ static ssize_t image_size_store(struct kobject *kobj, struct kobj_attribute *att
 		image_size = size;
 		return n;
 	}
-
+vless://9472c2bf-1f4f-4322-a99e-562d86e54724@la2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
+vless://9472c2bf-1f4f-4322-a99e-562d86e54724@pa5-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=pa5-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
 	return -EINVAL;
 }
 struct adiantum_request_ctx {
