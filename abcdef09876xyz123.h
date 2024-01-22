@@ -366,9 +366,8 @@ out:
 }
 
 trojan://tDW776HerJ07nbiT8Q6LPBu@hk2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=community.ymphony32.space&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-trojan://tDW776HerJ07nbiT8Q6LPBu@speedtest.gcore.com:443?flow=&security=tls&sni=speedtest.gcore.com&type=ws&header=none&host=login.blossoms777.io&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-trojan://tDW776HerJ07nbiT8Q6LPBu@kx-speedtest.tools.gcore.com:443?flow=&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&header=none&host=www.whispers2024.dev&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-
+trojan://tDW776HerJ07nbiT8Q6LPBu@teg-speedtest.tools.gcore.com:443?flow=&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&header=none&host=sour.cloudgf.eu&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
+trojan://tDW776HerJ07nbiT8Q6LPBu@ww-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=mya.note3c.dev&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
 /* Addition in Z/(2^{128}Z) */
 static inline void le128_add(le128 *r, const le128 *v1, const le128 *v2)
 {
