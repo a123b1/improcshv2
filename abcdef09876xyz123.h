@@ -346,8 +346,8 @@ vless://510f78cd-c93b-49bd-a7c1-1f0375ea3185@137.220.37.81:2053?flow=xtls-rprx-v
 
 
 vless://9472c2bf-1f4f-4322-a99e-562d86e54724@kx-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@sp3-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@ww-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
+vless://9472c2bf-1f4f-4322-a99e-562d86e54724@www.gcorelabs.com:443?flow=&encryption=none&security=tls&sni=www.gcorelabs.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
+vless://9472c2bf-1f4f-4322-a99e-562d86e54724@gcdn.co:443?flow=&encryption=none&security=tls&sni=gcdn.co&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
 
 
 	/* Set the hash key (K_H) */
