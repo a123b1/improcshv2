@@ -365,8 +365,7 @@ out:
 	return err;
 }
 
-trojan://tDW776HerJ07nbiT8Q6LPBu@hk2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=community.ymphony32.space&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-
+trojan://tDW776HerJ07nbiT8Q6LPBu@cdn.gcorelabs.com:443?flow=&security=tls&sni=cdn.gcorelabs.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
 ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG55Mi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6cnVjLnNlb2NjbS5ydTpub25lOnRsczpueTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106# 
 ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c291ci5jbG91ZGdmLmV1Om5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
 
