@@ -366,9 +366,8 @@ out:
 }
 
 trojan://tDW776HerJ07nbiT8Q6LPBu@cdn.gcorelabs.com:443?flow=&security=tls&sni=cdn.gcorelabs.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG55Mi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6cnVjLnNlb2NjbS5ydTpub25lOnRsczpueTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106# 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c291ci5jbG91ZGdmLmV1Om5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
-
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGNkbi5nY29yZS5jb206NDQzOndzOi9jbG91ZDp3d3cucHJvbXhpLnNwYWNlOm5vbmU6dGxzOmNkbi5nY29yZS5jb206WydodHRwLzEuMSddOg==# 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGFwaS5nY29yZS5jb206NDQzOndzOi9jbG91ZDpkdXNoLnByb214aS5zcGFjZTpub25lOnRsczphcGkuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
 /* Addition in Z/(2^{128}Z) */
 static inline void le128_add(le128 *r, const le128 *v1, const le128 *v2)
 {
