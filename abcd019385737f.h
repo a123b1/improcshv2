@@ -36,19 +36,6 @@ bool hibernate_acquire(void)
 {
 	return atomic_add_unless(&hibernate_atomic, -1, 0);
 }
-
-void hibernate_release(void)
-{
-	atomic_inc(&hibernate_atomic);
-}
-
-bool hibernation_available(void)
-{
-	return nohibernate == 0 &&
-		!security_locked_down(LOCKDOWN_HIBERNATION) &&
-		!secretmem_active() && !cxl_mem_active();
-}
-
 /**
  * hibernation_set_ops - Set the global hibernate operations.
  * @ops: Hibernation operations to use in subsequent hibernation transitions.
@@ -209,6 +196,19 @@ static void platform_recover(int platform_mode)
 	if (platform_mode && hibernation_ops && hibernation_ops->recover)
 		hibernation_ops->recover();
 }
+
+void hibernate_release(void)
+{
+	atomic_inc(&hibernate_atomic);
+}
+
+bool hibernation_available(void)
+{
+	return nohibernate == 0 &&
+		!security_locked_down(LOCKDOWN_HIBERNATION) &&
+		!secretmem_active() && !cxl_mem_active();
+}
+
 
 /**
  * swsusp_show_speed - Print time elapsed between two events during hibernation.
