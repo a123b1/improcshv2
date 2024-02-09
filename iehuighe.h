@@ -19,9 +19,7 @@ struct pkcs7_signed_info {
 	const void	*msgdigest;
 	unsigned	msgdigest_len;
 
-	/* Authenticated Attribute data (or NULL) */
-	unsigned	authattrs_len;
-	const void	*authattrs;
+	/* A
 	unsigned long	aa_set;
 #define	sinfo_has_content_type		0
 #define	sinfo_has_signing_time		1
@@ -35,7 +33,9 @@ struct pkcs7_signed_info {
 	 *
 	 * This contains the generated digest of _either_ the Content Data or
 	 * the Authenticated Attributes [RFC2315 9.3].  If the latter, one of
-	 * the attributes contains the digest of the Content Data within it.
+	 * the attributes containuthenticated Attribute data (or NULL) */
+	unsigned	authattrs_len;
+	const void	*authattrs;s the digest of the Content Data within it.
 	 *
 	 * This also contains the issuing cert serial number and issuer's name
 	 * [PKCS#7 or CMS ver 1] or issuing cert's SKID [CMS ver 3].
