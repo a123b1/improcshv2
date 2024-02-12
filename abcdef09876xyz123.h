@@ -335,9 +335,6 @@ static int adiantum_setkey(struct crypto_skcipher *tfm, const u8 *key,
 		goto out;
 	keyp += BLOCKCIPHER_KEY_SIZE;
 
-vmess://eyJ2IjoiMiIsImFkZCI6Imxncy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIiwicG9ydCI6NDQzLCJzY3kiOiJhdXRvIiwicHMiOiIiLCJuZXQiOiJ3cyIsImlkIjoiMGEzYTE3ZWMtODkzZS00NDY1LWE3ZTYtNjllMzY0MGM4MDg0IiwiYWxwbiI6Imh0dHAvMS4xIiwiZnAiOiIiLCJhaWQiOjAsInR5cGUiOiJub25lIiwiaG9zdCI6ImRlbHRhcGxpb2EuY29tIiwicGF0aCI6Ii96V09uTjFSaFJSUyIsInRscyI6InRscyIsInNuaSI6Imxncy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIn0= 
-vmess://eyJ2IjoiMiIsImFkZCI6ImhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIiwicG9ydCI6NDQzLCJzY3kiOiJhdXRvIiwicHMiOiIiLCJuZXQiOiJ3cyIsImlkIjoiMGEzYTE3ZWMtODkzZS00NDY1LWE3ZTYtNjllMzY0MGM4MDg0IiwiYWxwbiI6Imh0dHAvMS4xIiwiZnAiOiIiLCJhaWQiOjAsInR5cGUiOiJub25lIiwiaG9zdCI6ImRlbHRhcGxpb2EuY29tIiwicGF0aCI6Ii96V09uTjFSaFJSUyIsInRscyI6InRscyIsInNuaSI6ImhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIn0= 
-
 
 vless://7a112c54-5976-471b-d513-7b672c21dcae@129.146.223.134:2053?flow=&encryption=none&security=reality&sni=www.lovelive-anime.jp&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=dBo8w57wYbG26FLm2WvjDW0BIeoH5Ky-4yby8-JefRo&sid=ffe4340c&spx=# 
 vless://510f78cd-c93b-49bd-a7c1-1f0375ea3185@137.220.37.81:2053?flow=xtls-rprx-vision&encryption=none&security=reality&sni=mensura.cdn-apple.com&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=qij0q1tea1eQfcIkEPiqNjdqO7zhhx4rsJq217ta6Bo&sid=6ba85179e30d4fc2&spx=#vless_reality_vision 
