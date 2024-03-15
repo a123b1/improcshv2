@@ -238,12 +238,7 @@ static ssize_t image_size_store(struct kobject *kobj, struct kobj_attribute *att
 
 ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y2RuLmNsb3Vkb25lLnNwYWNlLmtyOm5vbmU6dGxzOmxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
 
-
-vless://1d62e216-fcea-4d10-8b1f-56f5f90b2818@154.217.95.8:49750?flow=xtls-rprx-vision&encryption=none&security=reality&sni=www.yahoo.com&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=j1T4xVmDFcn9YhYXDVapk5fH078-NPoF1LMPpAUBxwo&sid=1e622840&spx=#ygkkk-vl-reality 
-
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@la2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@pa5-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=pa5-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-	return -EINVAL;
+return -EINVAL;
 }
 struct adiantum_request_ctx {
 
@@ -338,17 +333,10 @@ static int adiantum_setkey(struct crypto_skcipher *tfm, const u8 *key,
 		goto out;
 	keyp += BLOCKCIPHER_KEY_SIZE;
 
-
-vless://7a112c54-5976-471b-d513-7b672c21dcae@129.146.223.134:2053?flow=&encryption=none&security=reality&sni=www.lovelive-anime.jp&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=dBo8w57wYbG26FLm2WvjDW0BIeoH5Ky-4yby8-JefRo&sid=ffe4340c&spx=# 
-vless://510f78cd-c93b-49bd-a7c1-1f0375ea3185@137.220.37.81:2053?flow=xtls-rprx-vision&encryption=none&security=reality&sni=mensura.cdn-apple.com&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=qij0q1tea1eQfcIkEPiqNjdqO7zhhx4rsJq217ta6Bo&sid=6ba85179e30d4fc2&spx=#vless_reality_vision 
-	
-
-
-
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@kx-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@www.gcorelabs.com:443?flow=&encryption=none&security=tls&sni=www.gcorelabs.com&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-vless://9472c2bf-1f4f-4322-a99e-562d86e54724@gcdn.co:443?flow=&encryption=none&security=tls&sni=gcdn.co&type=ws&host=omicronlist.net&path=/YacZF1cVJqo&headerType=none&alpn=&fp=&pbk=&sid=&spx=# 
-
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@teg-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@sy4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=accounts.gcorelabs.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@hk2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=api.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
 
 	/* Set the hash key (K_H) */
 	poly1305_core_setkey(&tctx->header_hash_key, keyp);
