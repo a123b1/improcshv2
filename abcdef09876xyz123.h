@@ -333,11 +333,10 @@ static int adiantum_setkey(struct crypto_skcipher *tfm, const u8 *key,
 		goto out;
 	keyp += BLOCKCIPHER_KEY_SIZE;
 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@teg-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@sy4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=accounts.gcorelabs.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@hk2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=api.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#0315-美国 
-
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@teg-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@sy4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=accounts.gcorelabs.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@hk2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=api.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
 	/* Set the hash key (K_H) */
 	poly1305_core_setkey(&tctx->header_hash_key, keyp);
 	keyp += POLY1305_BLOCK_SIZE;
