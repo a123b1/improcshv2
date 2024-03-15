@@ -34,15 +34,6 @@ static int _get_more_prng_bytes(struct prng_context *ctx, int cont_test)
 			break;
 		case 1:
 
-			/*
-			 * Next xor I with our secret vector V
-			 * encrypt that result to obtain our
-			 * pseudo random data which we output
-			 */
-			xor_vectors(ctx->I, ctx->V, tmp, DEFAULT_BLK_SZ);
-			hexdump("tmp stage 1: ", tmp, DEFAULT_BLK_SZ);
-			output = ctx->rand_data;
-			break;
 		case 2:
 			/*
 			 * First check that we didn't produce the same
