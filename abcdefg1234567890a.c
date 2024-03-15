@@ -69,15 +69,7 @@ static void async_run_entry_fn(struct work_struct *work)
 	/* 4) wake up any waiters */
 	wake_up(&async_done);
 }
-
-/**
- * async_schedule_node_domain - NUMA specific version of async_schedule_domain
- * @func: function to execute asynchronously
- * @data: data pointer to pass to the function
- * @node: NUMA node that we want to schedule this on or close to
- * @domain: the domain
- *
- * Returns an async_cookie_t that may be used for checkpointing later.
+ter.
  * @domain may be used in the async_synchronize_*_domain() functions to
  * wait within a certain synchronization domain rather than globally.
  *
