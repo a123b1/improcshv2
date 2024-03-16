@@ -236,8 +236,6 @@ static ssize_t image_size_store(struct kobject *kobj, struct kobj_attribute *att
 		return n;
 	}
 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y2RuLmNsb3Vkb25lLnNwYWNlLmtyOm5vbmU6dGxzOmxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
-
 return -EINVAL;
 }
 struct adiantum_request_ctx {
@@ -333,11 +331,7 @@ static int adiantum_setkey(struct crypto_skcipher *tfm, const u8 *key,
 		goto out;
 	keyp += BLOCKCIPHER_KEY_SIZE;
 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@teg-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@sy4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=accounts.gcorelabs.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@hk2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=api.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#美国 
-	/* Set the hash key (K_H) */
+/* Set the hash key (K_H) */
 	poly1305_core_setkey(&tctx->header_hash_key, keyp);
 	keyp += POLY1305_BLOCK_SIZE;
 
@@ -351,11 +345,6 @@ out:
 	kfree_sensitive(data);
 	return err;
 }
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGt4LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpzdGF0aWMuY29ybmJvcm4uaW86bm9uZTp0bHM6a3gtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106# 
-
-trojan://tDW776HerJ07nbiT8Q6LPBu@teg-speedtest.tools.gcore.com:443?flow=&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=# 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGNkbi5nY29yZS5jb206NDQzOndzOi9jbG91ZDp3d3cucHJvbXhpLnNwYWNlOm5vbmU6dGxzOmNkbi5nY29yZS5jb206WydodHRwLzEuMSddOg==# 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpteWEubm90ZTNjLmRldjpub25lOnRsczp3dy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=# 
 /* Addition in Z/(2^{128}Z) */
 static inline void le128_add(le128 *r, const le128 *v1, const le128 *v2)
 {
@@ -454,6 +443,17 @@ static int load_image_and_restore(void)
 /**
  * hibernate - Carry out system hibernation, including saving the image.
  */
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ny2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#3,美国,剩余964G,昨天用掉0.2G,0€.(0316更新) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@jp1-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=jp1-speedtest.tools.gcore.com&type=ws&host=he.si.t.ate.mix.cc&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩余936G,昨天用掉6.1G,0€.(0316更新) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@auth.gcore.com:443?flow=&security=tls&sni=auth.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩余679G,昨天用掉0.1G,0€.(0316更新) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@kal-speedtest.tools.gcore.com:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩余755G,昨天用掉21.9G,0€.(0316更新) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@cc1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩余724G,昨天用掉56.7G,0€.(0316更新) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ny2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#4,美国,剩余961G,昨天用掉0.6G,0€.(0316更新) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6YW5zd2VyLnUubWUuY2M6bm9uZTp0bHM6dGVnLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#16,德国,本月流量已用完,0€.(0316更新) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGpwMS1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c3RhdGljLmNvcm5ib3JuLmlvOm5vbmU6dGxzOmpwMS1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#15,德国,剩余805G,昨天用掉32.9G,0€.(0316更新) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@cc1-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩余962G,昨天用掉1.4G,0€.(0316更新) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmFub3QubWUudXM6bm9uZTp0bHM6aGsyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#11,德国,剩余635G,昨天用掉6.6G,0€.(0316更新) 
+
 int hibernate(void)
 {
 	bool snapshot_test = false;
