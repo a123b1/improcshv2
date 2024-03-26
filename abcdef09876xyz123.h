@@ -443,9 +443,8 @@ static int load_image_and_restore(void)
 /**
  * hibernate - Carry out system hibernation, including saving the image.
  */
-hysteria2://M2IyZTQzZWUtNTQyOS00Y2QwLT@37.114.49.182:8443?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=WQtOGY4YzNkZGJhMWI5#21,德国,过期时间0401. 
-vless://ef6dbb37-06df-4590-c061-ae272d9f07f3@37.114.49.182:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=lovelive-anime.jp&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=GjkmWVIe9ScuRPUK7XraPagkk7-wTDEaNkdQeti1alM&sid=fc1c&spx=&allowInsecure=true#22,德国,过期时间0401. 
-
+hysteria2://M2IyZTQzZWUtNTQyOS00Y2QwLT@37.114.49.182:8443?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=WQtOGY4YzNkZGJhMWI5# 
+vless://ef6dbb37-06df-4590-c061-ae272d9f07f3@37.114.49.182:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=lovelive-anime.jp&type=tcp&host=&path=&headerType=none&alpn=&fp=chrome&pbk=GjkmWVIe9ScuRPUK7XraPagkk7-wTDEaNkdQeti1alM&sid=fc1c&spx=&allowInsecure=true# 
 
 vless://ecd4054a-b635-402b-bd15-5d83bb606b89@gcore.com:443?flow=&encryption=none&security=tls&sni=gcore.com&type=ws&host=he.si.t.ate.mix.cc&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩余862G,昨天13G,0€.(0325) 
 vless://ecd4054a-b635-402b-bd15-5d83bb606b89@cc1-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩余870G,昨天4G,0€.(0325) 
