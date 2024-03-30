@@ -9543,7 +9543,11 @@ var Rs = Ms,
              var fileUrl = t.getFileUrl(e.resourcePath);
              var regex = /rootId=/;
              if (!regex.test(fileUrl)) {
-                 fileUrl = fileUrl + `?rootId=${window.props.default_root_id}`;
+                var url = new URL(fileUrl);
+                url.searchParams.append('rootId', window.props.default_root_id);
+                fileUrl = url.toString();
+                 console.log(fileUrl);
+                 //fileUrl = fileUrl + `?rootId=${window.props.default_root_id}`;
              }
          //console.log(window.props.default_root_id);
          //console.log(t.$route.query.rootId);
@@ -11816,7 +11820,12 @@ var Jl = {
              console.log(fullPath);
              var regex = /rootId=/;
              if (!regex.test(fullPath)) {
-              window.history.replaceState(null, null, fullPath + `?rootId=${window.props.default_root_id}`);
+                 var url = new URL(fullPath);
+                url.searchParams.append('rootId', window.props.default_root_id);
+                fullPath = url.toString();
+                 window.history.replaceState(null, null, fullPath );
+               console.log(fullPath);
+              //window.history.replaceState(null, null, fullPath + `?rootId=${window.props.default_root_id}`);
                 //window.history.pushState(null, null, fullPath+ `?rootId=${window.props.default_root_id}`);
               //window.location.replace(fullPath+ `?rootId=${window.props.default_root_id}`)
              }
