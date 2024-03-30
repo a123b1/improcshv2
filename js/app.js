@@ -9540,6 +9540,11 @@ var Rs = Ms,
                 loading: t.loading
             }
         }, t._l(t.list, (function(e) {
+             var fileUrl = t.getFileUrl(e.resourcePath);
+             var regex = /rootId=/;
+             if (!regex.test(fileUrl)) {
+                 fileUrl = fileUrl + `?rootId=${window.props.default_root_id}`;
+             }
          //console.log(window.props.default_root_id);
          //console.log(t.$route.query.rootId);
          //e.resourcePath = e.resourcePath +"?rootId=1E_MlWv_zx5w6upKAsHvXHWS0wXm7aZ9J";
@@ -9549,7 +9554,7 @@ var Rs = Ms,
                 staticClass: "pl-0",
                 attrs: {
                     tag: "a",
-                    href: t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
+                    href: fileUrl //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                 },
                 on: {
                     click: function(n) {
@@ -9572,7 +9577,7 @@ var Rs = Ms,
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`,
+                    href: fileUrl, // t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`,
                     download: ""
                 },
                 on: {
