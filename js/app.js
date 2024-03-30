@@ -11880,7 +11880,10 @@ var Jl = {
                             urlBase64: btoa(n)
                         }
                     })
-                } else location.href = n
+                } else{ 
+                 console.log(n);
+                 location.href = n + `?rootId=${window.props.default_root_id}`;
+                  }
             },
             uploadComplete: function() {
                 this.showUploadDialog = !1, this.renderPath(this.path, this.$route.query.rootId)
