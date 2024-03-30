@@ -11857,7 +11857,9 @@ var Jl = {
                                   currentUrl = url.toString();
                                   window.history.replaceState(null, null, currentUrl );
                                   console.log(currentUrl);
-                                  }});
+                                  }
+                                 return data;
+                                });
                             case 6:
                                 if (o = i.sent, a = o.files, r === n.renderStart) {
                                     i.next = 10;
