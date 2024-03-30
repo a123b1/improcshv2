@@ -9540,16 +9540,16 @@ var Rs = Ms,
                 loading: t.loading
             }
         }, t._l(t.list, (function(e) {
-         console.log(window.props.default_root_id);
+         //console.log(window.props.default_root_id);
          //console.log(t.$route.query.rootId);
          //e.resourcePath = e.resourcePath +"?rootId=1E_MlWv_zx5w6upKAsHvXHWS0wXm7aZ9J";
-           console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
+         //console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
             return n("v-list-item", {
                 key: e.id,
                 staticClass: "pl-0",
                 attrs: {
                     tag: "a",
-                    href: t.getFileUrl(e.resourcePath) +"?rootId=1E_MlWv_zx5w6upKAsHvXHWS0wXm7aZ9J"
+                    href: t.getFileUrl(e.resourcePath) +"?rootId=${window.props.default_root_id}"
                 },
                 on: {
                     click: function(n) {
@@ -11805,6 +11805,11 @@ var Jl = {
                     path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
                     query: n
                 })
+             var fullPath = this.$router.resolve({
+                path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
+                query: n}).href;
+             console.log(fullPath);
+             window.location.href = fullPath;
             },
             getFileUrl: function(t) {
                 var e = this.$route.query.rootId,
