@@ -11882,7 +11882,7 @@ var Jl = {
                     })
                 } else{ 
                  //location.href = n + `?rootId=${window.props.default_root_id}`;
-             window.open(n + `?rootId=${window.props.default_root_id}`, '_blank');
+             window.open(n + `?rootId=${window.props.default_root_id}`, '_self');
                   }
             },
             uploadComplete: function() {
