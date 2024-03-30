@@ -11884,7 +11884,8 @@ var Jl = {
                  //location.href = n + `?rootId=${window.props.default_root_id}`;
              //window.open(n + `?rootId=${window.props.default_root_id}`, '_self');
                  // window.location.assign(n + `?rootId=${window.props.default_root_id}`);
-                 window.location.href = n + `?rootId=${window.props.default_root_id}`;
+                 //window.location.href = n + `?rootId=${window.props.default_root_id}`;
+                 window.open(n + `?rootId=${window.props.default_root_id}`, '_blank');
                   }
             },
             uploadComplete: function() {
