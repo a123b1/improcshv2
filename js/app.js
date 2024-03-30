@@ -11848,7 +11848,9 @@ var Jl = {
                                     qs: {
                                         rootId: e
                                     }
-                                }).json().then(function(data){
+                                }).json();
+                            case 6:
+                          
                                 var regex = /rootId=/;
                                 var currentUrl = window.location.href;
                                 if (!regex.test(currentUrl)) {
@@ -11858,9 +11860,7 @@ var Jl = {
                                   window.history.replaceState(null, null, currentUrl );
                                   console.log(currentUrl);
                                   }
-                                 return data;
-                                });
-                            case 6:
+                          
                                 if (o = i.sent, a = o.files, r === n.renderStart) {
                                     i.next = 10;
                                     break
