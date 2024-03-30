@@ -9540,6 +9540,7 @@ var Rs = Ms,
                 loading: t.loading
             }
         }, t._l(t.list, (function(e) {
+           console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
             return n("v-list-item", {
                 key: e.id,
                 staticClass: "pl-0",
