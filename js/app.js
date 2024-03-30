@@ -11811,8 +11811,9 @@ var Jl = {
              console.log(fullPath);
              var regex = /rootId=/;
              if (!regex.test(fullPath)) {
-                window.history.pushState(null, null, fullPath+ `?rootId=${window.props.default_root_id}`);
-                //window.location.replace(fullPath)
+              window.history.replaceState(null, null, fullPath + `?rootId=${window.props.default_root_id}`);
+                //window.history.pushState(null, null, fullPath+ `?rootId=${window.props.default_root_id}`);
+              //window.location.replace(fullPath+ `?rootId=${window.props.default_root_id}`)
              }
             },
             getFileUrl: function(t) {
