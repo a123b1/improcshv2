@@ -11873,6 +11873,9 @@ var Jl = {
             handlePath: function(t, e) {
                 if ("/" === t.substr(-1)) return this.renderPath(t, e.rootId), !0;
                 var n = wl.a.resolve(window.props.api, t);
+                console.log(n);
+                n += "?rootId=" + e.rootId);
+                console.log(n);
                 if (e.rootId && e.rootId !== window.props.default_root_id && (n += "?rootId=" + e.rootId), e.opener) {
                     if ("image" === e.opener) {
                         var i = new Image;
