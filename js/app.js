@@ -11842,7 +11842,14 @@ var Jl = {
                     return regeneratorRuntime.wrap((function(i) {
                         while (1) switch (i.prev = i.next) {
                             case 0:
-                            var regex = /rootId=/;
+                        
+                                return r = n.renderStart = Date.now(), n.loading = !0, e || (e = window.props.default_root_id), n.list = [], i.next = 6, L.post(t, {
+                                    method: "POST",
+                                    qs: {
+                                        rootId: e
+                                    }
+                                }).json() .then(() => {
+                                     var regex = /rootId=/;
                                 var currentUrl = window.location.href;
                                if (!regex.test(currentUrl)) {
                                    var url = new URL(currentUrl);
@@ -11851,12 +11858,7 @@ var Jl = {
                                    window.history.replaceState(null, null, currentUrl );
                                  console.log(currentUrl);
                                }
-                                return r = n.renderStart = Date.now(), n.loading = !0, e || (e = window.props.default_root_id), n.list = [], i.next = 6, L.post(t, {
-                                    method: "POST",
-                                    qs: {
-                                        rootId: e
-                                    }
-                                }).json();
+  });
                             case 6:
                                 if (o = i.sent, a = o.files, r === n.renderStart) {
                                     i.next = 10;
