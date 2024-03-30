@@ -11848,17 +11848,16 @@ var Jl = {
                                     qs: {
                                         rootId: e
                                     }
-                                }).json() .then(() => {
-                                     var regex = /rootId=/;
+                                }).json().then(function(data){
+                                var regex = /rootId=/;
                                 var currentUrl = window.location.href;
-                               if (!regex.test(currentUrl)) {
-                                   var url = new URL(currentUrl);
+                                if (!regex.test(currentUrl)) {
+                                  var url = new URL(currentUrl);
                                   url.searchParams.append('rootId', window.props.default_root_id);
                                   currentUrl = url.toString();
-                                   window.history.replaceState(null, null, currentUrl );
-                                 console.log(currentUrl);
-                               }
-  });
+                                  window.history.replaceState(null, null, currentUrl );
+                                  console.log(currentUrl);
+                                  }});
                             case 6:
                                 if (o = i.sent, a = o.files, r === n.renderStart) {
                                     i.next = 10;
