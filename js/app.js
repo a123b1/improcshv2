@@ -11876,7 +11876,7 @@ var Jl = {
                     }
                     this.$router.push({
                         path: "/~viewer/" + e.opener,
-                        query: {
+                        query: {rootId: this.$route.query.rootId,
                             urlBase64: btoa(n)
                         }
                     })
