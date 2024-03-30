@@ -11807,10 +11807,13 @@ var Jl = {
                 })
              var fullPath = window.location.origin + this.$router.resolve({
                 path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
-                query: n}).href//+ `?rootId=${window.props.default_root_id}`;
+                query: n}).href;
              console.log(fullPath);
-             window.history.pushState(null, null, fullPath);
-             //window.location.replace(fullPath)
+             var regex = /rootId=/;
+             if (!regex.test(fullPath)) {
+                window.history.pushState(null, null, fullPath+ `?rootId=${window.props.default_root_id}`);
+                //window.location.replace(fullPath)
+             }
             },
             getFileUrl: function(t) {
                 var e = this.$route.query.rootId,
