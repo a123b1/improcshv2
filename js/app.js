@@ -9572,7 +9572,7 @@ var Rs = Ms,
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: t.getFileUrl(e.resourcePath),
+                    href: t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`,
                     download: ""
                 },
                 on: {
