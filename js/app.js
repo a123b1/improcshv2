@@ -11807,7 +11807,7 @@ var Jl = {
                 })
              var fullPath = window.location.origin + this.$router.resolve({
                 path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
-                query: n}).href+ `?rootId=${window.props.default_root_id}`;
+                query: n}).href//+ `?rootId=${window.props.default_root_id}`;
              console.log(fullPath);
              window.history.pushState(null, null, fullPath);
              //window.location.replace(fullPath)
