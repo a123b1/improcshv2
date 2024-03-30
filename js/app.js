@@ -9549,7 +9549,7 @@ var Rs = Ms,
                 staticClass: "pl-0",
                 attrs: {
                     tag: "a",
-                    href: t.getFileUrl(e.resourcePath) +`?rootId=${window.props.default_root_id}`
+                    href: t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                 },
                 on: {
                     click: function(n) {
@@ -11807,7 +11807,7 @@ var Jl = {
                 })
              var fullPath = window.location.origin + this.$router.resolve({
                 path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
-                query: n}).href+`?rootId=${window.props.default_root_id}`;
+                query: n}).href+ `?rootId=${window.props.default_root_id}`;
              console.log(fullPath);
              window.history.pushState(null, null, fullPath);
              //window.location.replace(fullPath)
