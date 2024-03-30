@@ -11842,7 +11842,15 @@ var Jl = {
                     return regeneratorRuntime.wrap((function(i) {
                         while (1) switch (i.prev = i.next) {
                             case 0:
-                                console.log(12345);
+                            var regex = /rootId=/;
+                                var currentUrl = window.location.href;
+                               if (!regex.test(currentUrl)) {
+                                   var url = new URL(currentUrl);
+                                  url.searchParams.append('rootId', window.props.default_root_id);
+                                  currentUrl = url.toString();
+                                   window.history.replaceState(null, null, currentUrl );
+                                 console.log(currentUrl);
+                               }
                                 return r = n.renderStart = Date.now(), n.loading = !0, e || (e = window.props.default_root_id), n.list = [], i.next = 6, L.post(t, {
                                     method: "POST",
                                     qs: {
