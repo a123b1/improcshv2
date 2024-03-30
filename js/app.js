@@ -11805,11 +11805,12 @@ var Jl = {
                     path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
                     query: n
                 })
-             var fullPath = this.$router.resolve({
+             var fullPath = window.location.origin + this.$router.resolve({
                 path: t.split("/").map(decodeURIComponent).map(encodeURIComponent).join("/"),
-                query: n}).href;
+                query: n}).href+"?rootId=${window.props.default_root_id}";
              console.log(fullPath);
-             window.location.href = fullPath;
+             window.history.pushState(null, null, fullPath);
+             //window.location.replace(fullPath)
             },
             getFileUrl: function(t) {
                 var e = this.$route.query.rootId,
