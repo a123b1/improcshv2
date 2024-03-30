@@ -11882,12 +11882,7 @@ var Jl = {
                     })
                 } else{ 
                  //location.href = n + `?rootId=${window.props.default_root_id}`;
-                 this.$router.push({
-                  path: n,
-                  query: {
-                      rootId: window.props.default_root_id
-                  }
-              });
+             window.open(n + `?rootId=${window.props.default_root_id}`, '_blank');
                   }
             },
             uploadComplete: function() {
