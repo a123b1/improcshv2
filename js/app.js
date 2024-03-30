@@ -9540,7 +9540,7 @@ var Rs = Ms,
                 loading: t.loading
             }
         }, t._l(t.list, (function(e) {
-         console.log(window.props.default_root_id,t.$route.query.rootId,t.route.query.rootId);
+         console.log(window.props.default_root_id,t.$route.query.rootId);
          //console.log(t.$route.query.rootId);
          //e.resourcePath = e.resourcePath +"?rootId=1E_MlWv_zx5w6upKAsHvXHWS0wXm7aZ9J";
            console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
