@@ -11881,8 +11881,13 @@ var Jl = {
                         }
                     })
                 } else{ 
-                 console.log(n);
-                 location.href = n + `?rootId=${window.props.default_root_id}`;
+                 //location.href = n + `?rootId=${window.props.default_root_id}`;
+                 this.$router.push({
+                  path: n,
+                  query: {
+                      rootId: window.props.default_root_id
+                  }
+              });
                   }
             },
             uploadComplete: function() {
