@@ -444,16 +444,15 @@ static int load_image_and_restore(void)
  * hibernate - Carry out system hibernation, including saving the image.
  */
 
-trojan://tDW776HerJ07nbiT8Q6LPBu@sp3-speedtest.tools.gcore.com:443?flow=&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩余912G,0€.(0404) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@hk2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩余924G,0€.(0404) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@la2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=he.si.t.ate.mix.cc&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩余926G,0€.(0404) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@jp1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=jp1-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩余914G,0€.(0404) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ww-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#4,美国,剩余941G,0€.(0404) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@sp3-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#3,美国,剩余910G,0€.(0404) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmFub3QubWUudXM6bm9uZTp0bHM6bGEyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#11,英国,剩余884G,0€.(0404) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGt4LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpjaGF0LnNvdXJwZWFyLndlLmNhOm5vbmU6dGxzOmt4LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#12,英国,剩余未知,0€.(0404) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ny2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩余956G,0€.(0404) 
-vmess://eyJ2IjoiMiIsImFkZCI6ImxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIiwicG9ydCI6NDQzLCJzY3kiOiJhdXRvIiwicHMiOiI2LOe+juWbvSzliankvZk4NzNHLDDigqwuKDA0MDQpIiwibmV0Ijoid3MiLCJpZCI6IjQ5ZmViNjlhLTUxNzEtNDVmMC05NWIwLWIwNDU0NmU2YzNkZCIsImFscG4iOiJodHRwLzEuMSIsImZwIjoiIiwiYWlkIjowLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJ3d3cuY2VsZWJyYXRlLmN5b3UiLCJwYXRoIjoiL3Jlc291cmNlcyIsInRscyI6InRscyIsImFsbG93SW5zZWN1cmUiOnRydWUsInNuaSI6ImxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tIn0= 
+
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@thn2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=thn2-speedtest.tools.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#4,美国,剩余927G,昨天33G,0€.(0405) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@kx-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&host=he.si.t.ate.mix.cc&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩余902G,昨天40G,0€.(0405) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@min4-speedtest.tools.gcore.com:443?flow=&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩余897G,昨天33G,0€.(0405) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@lgs-speedtest.tools.gcore.com:443?flow=&security=tls&sni=lgs-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩余916G,昨天18G,0€.(0405) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@www.gcore.com:443?flow=&security=tls&sni=www.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩余893G,昨天39G,0€.(0405) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@cc1-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩余946G,昨天22G,0€.(0405) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=guess.what.lnk.us&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#3,美国,剩余884G,昨天52G,0€.(0405) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG5zMi5nY2RuLnNlcnZpY2VzOjQ0Mzp3czovY2xvdWQ6bXlhLm5vdGUzYy5kZXY6bm9uZTp0bHM6bnMyLmdjZG4uc2VydmljZXM6WydodHRwLzEuMSddOg==#9,英国,剩余900G,昨天26G,0€.(0405) 
 
 int hibernate(void)
 {
