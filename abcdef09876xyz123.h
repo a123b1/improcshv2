@@ -444,17 +444,16 @@ static int load_image_and_restore(void)
  * hibernate - Carry out system hibernation, including saving the image.
  */
 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4MS4xNzQuODAuMTgyOjQ0Mzp3czovY2xvdWQ6Y2RuLmNsb3Vkb25lLnNwYWNlLmtyOm5vbmU6dGxzOnd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#13,英国,剩266G,昨21G.(0427)
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c2Vydi55dWdvY3guZGV2Om5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#12,英国,剩731G,昨12G.(0427) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6ZS5zcGVjaWFsLmx5LmlvOm5vbmU6dGxzOmxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#16,英国,剩777G,昨13G.(0427)
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGduczIuZ2Nkbi5jbzo0NDM6d3M6L2Nsb3VkOnd3dy5wcm9teGkuc3BhY2U6bm9uZTp0bHM6Z25zMi5nY2RuLmNvOlsnaHR0cC8xLjEnXTo=#10,英国,剩374G,昨30G.(0427) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@5.188.132.6:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩531G,昨14G.(0427)
-trojan://tDW776HerJ07nbiT8Q6LPBu@ny2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩531G,昨14G.(0427)
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRobjItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnd3dy53aGV0aGVyLnNwYWNlLm1uLmNjOm5vbmU6dGxzOnRobjItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#17,英国,剩228G,昨22G.(0427)
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpjZG4uY2xvdWRvbmUuc3BhY2Uua3I6bm9uZTp0bHM6d3ctc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#13,英国,剩266G,昨21G.(0427)
-trojan://tDW776HerJ07nbiT8Q6LPBu@43.245.140.2:443?flow=&security=tls&sni=ns1.gcorelabs.net&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩142G,昨40G.(0427) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDgwLjkzLjIyMy42Mjo0NDM6d3M6L2Nsb3VkOmUuc3BlY2lhbC5seS5pbzpub25lOnRsczpsYTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#16,英国,剩777G,昨13G.(0427) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ns1.gcorelabs.net:443?flow=&security=tls&sni=ns1.gcorelabs.net&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩142G,昨40G.(0427) 
+
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4MC4xNDkuOTAuNjY6NDQzOndzOi9jbG91ZDp3d3cud2hldGhlci5zcGFjZS5tbi5jYzpub25lOnRsczpwYTUtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#17,英国,剩179G,昨46G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG55Mi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LnByb214aS5zcGFjZTpub25lOnRsczpueTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#10,英国,剩350G,昨25G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGRvY3MuZ2NvcmVsYWJzLmNvbTo0NDM6d3M6L2Nsb3VkOnN0YXRpYy5jb3JuYm9ybi5pbzpub25lOnRsczpkb2NzLmdjb3JlbGFicy5jb206WydodHRwLzEuMSddOg==#15,英国,剩313G,昨27G.(0428) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@80.93.223.62:443?flow=&security=tls&sni=ns1.gcdn.services&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩507G,昨24G.(0428) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@ns1.gcdn.services:443?flow=&security=tls&sni=ns1.gcdn.services&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩507G,昨24G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDUuMTg4LjEyNi4xNDo0NDM6d3M6L2Nsb3VkOmNkbjM2NS5wZW5wZWVyLmlvOm5vbmU6dGxzOmxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#14,英国,剩227G,昨36G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y2RuMzY1LnBlbnBlZXIuaW86bm9uZTp0bHM6bGEyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#14,英国,剩227G,昨36G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHNwZWVkdGVzdC5nY29yZS5jb206NDQzOndzOi9jbG91ZDplLnNwZWNpYWwubHkuaW86bm9uZTp0bHM6c3BlZWR0ZXN0Lmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#16,英国,剩757G,昨20G.(0428) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDUuMTg4LjEzMi42OjQ0Mzp3czovY2xvdWQ6ZS5zcGVjaWFsLmx5LmlvOm5vbmU6dGxzOnNwZWVkdGVzdC5nY29yZS5jb206WydodHRwLzEuMSddOg==#16,英国,剩757G,昨20G.(0428) 
 
 int hibernate(void)
 {
