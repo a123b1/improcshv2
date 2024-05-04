@@ -9646,12 +9646,11 @@ var Rs = Ms,
 
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
-                on: {click: function(t) {
-                t.stopPropagation();t.preventDefault();
-                console.log(localStorage.token);
-                if (confirm(`确定删除文件：“${t.currentTarget.getAttribute('efilename')}”`)) {
+                on: {click: function(event) {
+                event.stopPropagation();event.preventDefault();
+                if (confirm(`确定删除文件：“${event.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
-                    var r = new URL(t.currentTarget.getAttribute('fileurl'));
+                    var r = new URL(event.currentTarget.getAttribute('fileurl'));
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                     t.renderPath(t.path, window.props.default_root_id)
                 }
