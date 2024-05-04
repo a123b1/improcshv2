@@ -9568,11 +9568,11 @@ var Rs = Ms,
                     }
                 }
             }, [
-            
+
             n("v-list-item-avatar", {
                 staticClass: "ma-0"
-            }, [n("v-icon", [t._v(t._s(e.icon))])], 1), 
-            
+            }, [n("v-icon", [t._v(t._s(e.icon))])], 1),
+
             n("v-list-item-content", {
                 staticClass: "py-2"
             }, [n("v-list-item-title", {
@@ -9584,7 +9584,7 @@ var Rs = Ms,
                     textContent: t._s(e.fileSize)
                 }
             })], 1),
-            
+
              n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
@@ -9599,16 +9599,15 @@ var Rs = Ms,
                 }
             }, [n("v-icon", {
                 attrs: {
-                    color: "black"
+                    color: "blue"
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
-            
+
             n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: fileUrl,
-                    download: ""
+                    href: "javascript:void(0)",
                 },
                 on: {
                     click: function(t) {
@@ -9617,12 +9616,12 @@ var Rs = Ms,
                 }
             }, [n("v-icon", {
                 attrs: {
-                    color: "black"
+                    color: "red"
                 }
             }, [t._v(" mdi-delete ")])], 1)], 1)
-            
-            
-            
+
+
+
             ], 1)
         })), 1)], 1)], 1)], 1)
     },
