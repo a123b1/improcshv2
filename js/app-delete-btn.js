@@ -9506,6 +9506,21 @@ var Rs = Ms,
                 expression: "showUploadDialog"
             }
         }),
+        n("NewFolderDialog", { // TODO
+            attrs: {
+                uploadUrl: t.uploadUrl
+            },
+            on: {
+                uploaded: t.uploadComplete
+            },
+            model: {
+                value: t.showNewFolderDialog,
+                callback: function(e) {
+                    t.showNewFolderDialog = e
+                },
+                expression: "showNewFolderDialog"
+            }
+        }),
         t.uploadEnabled ? n("v-row", {
             attrs: {
                 justify: "center"
@@ -9539,7 +9554,7 @@ var Rs = Ms,
             },
             on: {
                 click: function(e) {
-//                    t.showUploadDialog = !0
+                    t.showNewFolderDialog = !0
                 }
             }
         })], 1)], 1) : t._e(),
@@ -11840,7 +11855,8 @@ var Jl = {
                 renderStart: null,
                 uploadEnabled: window.props.upload,
                 del_fileEnabled: window.props.del_file,
-                showUploadDialog: !1
+                showUploadDialog: !1,
+                showNewFolderDialog: !1
             }
         },
         computed: {
