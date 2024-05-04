@@ -9648,12 +9648,16 @@ var Rs = Ms,
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: "javascript:void(0)",
-                    fileName: e.fileName
+                    href: "", // javascript:void(0)
+                    fileUrl: fileUrl,
+                    efileName: e.fileName
                 },
                 on: {
                     click: function(t) {
-                        if (confirm(`确定删除文件：“${this.$attrs.fileName}”`)) {
+                        if (confirm(`确定删除文件：“${this.$attrs.efileName}”`)) {
+                            var n = new XMLHttpRequest;
+                            var r = new URL(fileUrl);
+                            n.open("PUT", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                             console.log("新建的文件夹名称是：", this.$attrs.fileName);
                         }
                         t.stopPropagation()
