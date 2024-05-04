@@ -9600,6 +9600,9 @@ var Rs = Ms,
             }, [n("v-icon", {
                 attrs: {
                     color: "blue"
+                },
+                style: {
+                    color: "blue"
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
 
@@ -9616,6 +9619,9 @@ var Rs = Ms,
                 }
             }, [n("v-icon", {
                 attrs: {
+                    color: "red"
+                },
+                style: {
                     color: "red"
                 }
             }, [t._v(" mdi-delete ")])], 1)], 1)
