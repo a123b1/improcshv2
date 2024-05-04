@@ -1133,15 +1133,19 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                          name: "navbar",
                          slim: ""
                      }
-                 }), n("v-spacer"), n("v-toolbar-items", [n("v-btn", {
-                     staticClass: "text-none hidden-sm-and-down",
-                     attrs: {
-                         text: "",
-                         tag: "a",
-                         href: "https://github.com/maple3142/GDIndex",
-                         target: "_blank"
-                     }
-                 }, [n("v-icon", [t._v("mdi-github-circle")]), t._v(" GitHub")], 1)], 1)], 1), n("v-content", [n("router-view")], 1), n("LoginDialog", {
+                 }), n("v-spacer"), n("v-toolbar-items", [
+
+//                 n("v-btn", {
+//                     staticClass: "text-none hidden-sm-and-down",
+//                     attrs: {
+//                         text: "",
+//                         tag: "a",
+//                         href: "https://github.com/maple3142/GDIndex",
+//                         target: "_blank"
+//                     }
+//                 }, [n("v-icon", [t._v("mdi-github-circle")]), t._v(" GitHub")], 1) // TODO
+
+                 ], 1)], 1), n("v-content", [n("router-view")], 1), n("LoginDialog", {
                      attrs: {
                          show: t.showAuthInput
                      }
