@@ -444,17 +444,20 @@ static int load_image_and_restore(void)
  * hibernate - Carry out system hibernation, including saving the image.
  */
 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ny2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩986G,昨49G.(0501) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@cc1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩998G,昨0G.(0501) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@5.188.132.6:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩998G,昨0G.(0501) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ww-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩998G,昨0G.(0501) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@5.188.126.14:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩986G,昨49G.(0501) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@94.128.12.238:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩998G,昨0G.(0501) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG1pbjQtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnd3dy5wcm9teGkuc3BhY2U6bm9uZTp0bHM6bWluNC1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#10,英国,剩989G,昨45G.(0501) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS4xNjMuMy41OjQ0Mzp3czovY2xvdWQ6c2Vydi55dWdvY3guZGV2Om5vbmU6dGxzOmhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#12,英国,剩999G,昨35G.(0501) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE5NC4xNTguMTk4LjY6NDQzOndzOi9jbG91ZDpzdGF0aWMuY29ybmJvcm4uaW86bm9uZTp0bHM6anAxLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#15,英国,剩994G,昨31G.(0501) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGdjZG4uY286NDQzOndzOi9jbG91ZDpjZG4uY2xvdWRvbmUuc3BhY2Uua3I6bm9uZTp0bHM6Z2Nkbi5jbzpbJ2h0dHAvMS4xJ106#13,英国,剩990G,昨32G.(0501) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGpwMS1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c3RhdGljLmNvcm5ib3JuLmlvOm5vbmU6dGxzOmpwMS1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#15,英国,剩994G,昨31G.(0501) 
+
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS40OC4xMzYuMTUwOjQ0Mzp3czovY2xvdWQ6Y2RuMzY1LnBlbnBlZXIuaW86bm9uZTp0bHM6aGsyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#14,英国,剩851G,昨45G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDM3LjIzOS4xNDUuMTM6NDQzOndzOi9jbG91ZDp3d3cucHJvbXhpLnNwYWNlOm5vbmU6dGxzOm1pbjQtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#10,英国,剩906G,昨27G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LndoZXRoZXIuc3BhY2UubW4uY2M6bm9uZTp0bHM6bGEyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#17,英国,剩925G,昨25G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@194.158.198.2:443?flow=&security=tls&sni=jp1-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩920G,昨24G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@auth.gcorelabs.com:443?flow=&security=tls&sni=auth.gcorelabs.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩934G,昨21G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@82.200.205.204:443?flow=&security=tls&sni=auth.gcorelabs.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,英国,剩934G,昨21G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@cc1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩917G,昨34G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@5.188.126.14:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,英国,剩917G,昨34G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE5NS4xNC4xNDYuODE6NDQzOndzOi9jbG91ZDp3d3cuZmxhbWViYS5pdDpub25lOnRsczpsZ3Mtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#11,英国,剩966G,昨20G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y2RuMzY1LnBlbnBlZXIuaW86bm9uZTp0bHM6aGsyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#14,英国,剩851G,昨45G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxncy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmZsYW1lYmEuaXQ6bm9uZTp0bHM6bGdzLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#11,英国,剩966G,昨20G.(0504) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@jp1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=jp1-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,英国,剩920G,昨24G.(0504) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDUuMTAxLjIyMi4xMzo0NDM6d3M6L2Nsb3VkOnd3dy53aGV0aGVyLnNwYWNlLm1uLmNjOm5vbmU6dGxzOmxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#17,英国,剩925G,昨25G.(0504) 
 
 int hibernate(void)
 {
