@@ -9648,7 +9648,8 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(t) {
                 t.stopPropagation();t.preventDefault();
-                console.log(111111,fileUrl,e.fileName);
+                console.log(111111,t.currentTarget.getAttribute('fileurl'),t.localStorage,);
+                console.log(localStorage);
                 if (confirm(`确定删除文件：“${t.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(t.currentTarget.getAttribute('fileurl'));
