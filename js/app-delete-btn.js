@@ -9556,7 +9556,21 @@ var Rs = Ms,
                 click: function(e) {
                     var folderName = prompt("文件夹名称");
                     if (folderName !== null && folderName != "") {
-                        console.log("新建的文件夹名称是：", folderName);
+                        folderName = folderName.replace(/\s+/g, '');
+                        console.log("新建的文件夹名称是：", folderName,t.path);
+                        var n = new XMLHttpRequest;
+                        var r = new URL(t.path+"/"+folderName);
+                        var params = new URLSearchParams(r.search);
+                        params.set("nfolder", "true");
+                        r.search = params.toString();
+                        n.onreadystatechange = function() {
+                          if (n.readyState === 4) {
+                            t.renderPath(t.path, window.props.default_root_id)
+                          }
+                        };
+                        console.log(r.href);
+                        n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
                     }
                 }
             }
@@ -9652,13 +9666,13 @@ var Rs = Ms,
                     var n = new XMLHttpRequest;
                     var r = new URL(event.currentTarget.getAttribute('fileurl'));
                     n.onreadystatechange = function() {
-                      console.log(n.readyState);
+//                      console.log(n.readyState);
                       if (n.readyState === 4) {
                         t.renderPath(t.path, window.props.default_root_id)
                       }
                     };
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-                    
+
                 }
             }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
