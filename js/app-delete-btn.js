@@ -9647,11 +9647,11 @@ var Rs = Ms,
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(t) {
-                t.stopPropagation();
+                t.stopPropagation();n.preventDefault();
                 console.log(111111);
-                if (confirm(`确定删除文件：“${t.target.getAttribute('efilename')}”`)) {
+                if (confirm(`确定删除文件：“${t.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
-                    var r = new URL(t.target.getAttribute('fileurl'));
+                    var r = new URL(t.currentTarget.getAttribute('fileurl'));
                     n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                     console.log("新建的文件夹名称是：", this.$attrs.fileName);
                 }
@@ -9660,7 +9660,7 @@ var Rs = Ms,
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: "", // javascript:void(0)
+                    href: "", // javascript:void(0) currentTarget
 //                    fileurl: fileUrl,
 //                    efilename: e.fileName
                 },
