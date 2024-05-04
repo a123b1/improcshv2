@@ -9659,7 +9659,7 @@ var Rs = Ms,
                 attrs: {
                     icon: "",
                     tag: "a",
-                    href: "", // javascript:void(0) currentTarget
+                    href: "javascript:void(0)",
 //                    fileurl: fileUrl,
 //                    efilename: e.fileName
                 },
