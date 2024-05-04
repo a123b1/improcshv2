@@ -9645,7 +9645,7 @@ var Rs = Ms,
             }, [t._v(" mdi-file-download ")])], 1)], 1),
 
             !t.del_fileEnabled ? t._e() : n("v-list-item-action", on: {
-                    click: function(t) {console.log(1111111);}} [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
+                    click: function(t) {console.log(1111111);}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
