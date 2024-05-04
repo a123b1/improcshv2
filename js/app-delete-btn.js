@@ -9654,7 +9654,6 @@ var Rs = Ms,
                     var n = new XMLHttpRequest;
                     var r = new URL(t.currentTarget.getAttribute('fileurl'));
                     n.open("DELETE", r.href), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-                    console.log("新建的文件夹名称是：", this.$attrs.fileName);
                 }
                 console.log(222222);
             }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
