@@ -9524,7 +9524,9 @@ var Rs = Ms,
                     t.showUploadDialog = !0
                 }
             }
-        }),n("v-btn", {
+        }),
+        n("span", { style: { width: '10px' } }),
+        n("v-btn", {
             attrs: {
                 color: "primary"
             },
