@@ -9521,7 +9521,7 @@ var Rs = Ms,
                 color: "primary"
             },
             domProps: {
-                textContent: t._s("上传")
+                textContent: t._s("上传文件")
             },
             on: {
                 click: function(e) {
@@ -11068,7 +11068,7 @@ var vl = n("94df"),
                 text: ""
             },
             domProps: {
-                textContent: t._s("上传")
+                textContent: t._s("上传文件")
             },
             on: {
                 click: t.upload
