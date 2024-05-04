@@ -9554,67 +9554,13 @@ var Rs = Ms,
             },
             on: {
                 click: function(e) {
-                    console.log("test", e);
-//                    t.showNewFolderDialog = !0
- t.dialogVisible = true;
+                    var folderName = prompt("文件夹名称：");
+                    if (folderName !== null) {
+                        console.log("新建的文件夹名称是：", folderName);
+                    }
                 }
             }
         }),
-
-n("v-dialog", {
-  props: {
-    value: t.dialogVisible, // 控制对话框的显示状态
-  },
-  on: {
-    input: function(value) {
-      // 当对话框的显示状态改变时更新数据
-      t.dialogVisible = value;
-    }
-  }
-}, [
-  n("v-card", [
-    n("v-card-title", "新建文件夹"),
-    n("v-card-text", [
-      n("v-text-field", {
-        attrs: {
-          label: "文件夹名称"
-        },
-        model: {
-          value: t.folderName,
-          callback: function(value) {
-            // 当输入框的值改变时更新数据
-            t.folderName = value;
-          }
-        }
-      })
-    ]),
-    n("v-card-actions", [
-      n("v-btn", {
-        attrs: {
-          color: "primary"
-        },
-        on: {
-          click: function() {
-            // 点击确定按钮后执行的逻辑
-            console.log("新建的文件夹名称是：", t.folderName);
-
-            // 关闭对话框
-            t.dialogVisible = false;
-          }
-        }
-      }, "确定"),
-      n("v-btn", {
-        on: {
-          click: function() {
-            // 点击取消按钮后执行的逻辑
-            // 关闭对话框
-            t.dialogVisible = false;
-          }
-        }
-      }, "取消")
-    ])
-  ])
-])
 
 
         ], 1)], 1) : t._e(),
@@ -11917,7 +11863,7 @@ var Jl = {
                 del_fileEnabled: window.props.del_file,
                 showUploadDialog: !1,
                 showNewFolderDialog: !1,
-                dialogVisible = false;
+                dialogVisible = false
             }
         },
         computed: {
