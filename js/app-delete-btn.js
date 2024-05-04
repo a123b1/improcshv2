@@ -6182,7 +6182,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                                      return e.next = 10, L.get("/~_~_gdindex/drives").json();
                                  case 10:
                                      i = e.sent, r = i.drives, t.drives = [{
-                                         text: t.$t("mainDrive"),
+                                         text: "主硬盘",
                                          value: "root"
                                      }].concat(r.map((function(t) {
                                          return {
@@ -9521,7 +9521,7 @@ var Rs = Ms,
                 color: "primary"
             },
             domProps: {
-                textContent: t._s(t.$t("upload"))
+                textContent: t._s("上传")
             },
             on: {
                 click: function(e) {
@@ -10997,7 +10997,7 @@ var vl = n("94df"),
         }, [t.uploading ? n("v-card", [n("v-card-title", {
             staticClass: "headline",
             domProps: {
-                textContent: t._s(t.$t("uploading"))
+                textContent: t._s("正在上传...")
             }
         }), n("v-card-text", [n("v-container", [n("v-row", [n("v-col", [n("p", {
             staticClass: "text-right mb-0",
@@ -11010,10 +11010,10 @@ var vl = n("94df"),
             }
         })], 1)], 1)], 1)], 1)], 1) : n("v-card", [n("v-card-title", {
             staticClass: "headline"
-        }, [n("span", [t._v(t._s(t.$t("fileUpload")))]), n("v-switch", {
+        }, [n("span", [t._v(t._s("上传文件"))]), n("v-switch", {
             staticClass: "ml-4 mt-0 pt-0 title-switch",
             attrs: {
-                label: t.$t("urlUpload")
+                label: "从网址上传"
             },
             model: {
                 value: t.uploadFromUrl,
@@ -11024,9 +11024,9 @@ var vl = n("94df"),
             }
         })], 1), n("v-card-text", [n("v-container", [n("v-row", [t.uploadFromUrl ? n("v-col", [n("v-text-field", {
             attrs: {
-                label: t.$t("urlUpload"),
+                label: "从网址上传",
                 error: t.showError,
-                messages: t.$t("bigFileUploadWarning")
+                messages: "由于 CloudFlare Workers 的限制，上传大档案可能会随机失败"
             },
             model: {
                 value: t.url,
@@ -11037,7 +11037,7 @@ var vl = n("94df"),
             }
         })], 1) : n("v-col", [n("v-file-input", {
             attrs: {
-                label: t.$t("fileToUpload"),
+                label: "要上传的文件",
                 "prepend-icon": "",
                 "prepend-inner-icon": "$file",
                 error: t.showError
@@ -11051,7 +11051,7 @@ var vl = n("94df"),
             }
         })], 1)], 1), n("v-row", [n("v-col", [n("v-text-field", {
             attrs: {
-                label: t.$t("fileName")
+                label: "文件名称"
             },
             model: {
                 value: t.fileName,
@@ -11068,7 +11068,7 @@ var vl = n("94df"),
                 text: ""
             },
             domProps: {
-                textContent: t._s(t.$t("upload"))
+                textContent: t._s("上传")
             },
             on: {
                 click: t.upload
@@ -11102,7 +11102,7 @@ var vl = n("94df"),
         },
         computed: {
             progressMessage: function() {
-                return this.progress < 100 ? this.$t("uploading") : this.$t("serverProcessing")
+                return this.progress < 100 ? "正在上传..." : "服务器正在处理文件"
             }
         },
         watch: {
@@ -11823,16 +11823,16 @@ var Jl = {
                 list: [],
                 loading: !1,
                 headers: [{
-                    text: this.$t("fileName"),
+                    text: "文件名称",
                     value: "fileName",
                     class: ["fileName"]
                 }, {
-                    text: this.$t("modifiedTime"),
+                    text: "修改时间",
                     value: "modifiedTime",
                     filterable: !1,
                     class: "hidden-sm-and-down"
                 }, {
-                    text: this.$t("fileSize"),
+                    text: "文件大小",
                     value: "fileSize",
                     filterable: !1,
                     class: "hidden-sm-and-down"
