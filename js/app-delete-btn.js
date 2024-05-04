@@ -9525,7 +9525,7 @@ var Rs = Ms,
                 }
             }
         }),
-        n("span", { style: { width: '10px' } }),
+        n("div", { style: { width: '10px' } }),
         n("v-btn", {
             attrs: {
                 color: "primary"
