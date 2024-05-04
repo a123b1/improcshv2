@@ -9557,9 +9557,8 @@ var Rs = Ms,
                     var folderName = prompt("文件夹名称");
                     if (folderName !== null && folderName != "") {
                         folderName = folderName.replace(/\s+/g, '');
-                        console.log("新建的文件夹名称是：", folderName,t.getFileUrl(t.path+"/"+folderName));
                         var n = new XMLHttpRequest;
-                        var r = new URL(t.getFileUrl(t.path+"/"+folderName));
+                        var r = new URL(t.getFileUrl(t.path+folderName));
                         var params = new URLSearchParams(r.search);
                         params.set("nfolder", "true");
                         r.search = params.toString();
@@ -9662,7 +9661,7 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
-                if (confirm(`确定删除文件：“${event.currentTarget.getAttribute('efilename')}”`)) {
+                if (confirm(`确定永久删除文件${e.isFolder?"夹":""}：“${event.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(event.currentTarget.getAttribute('fileurl'));
                     n.onreadystatechange = function() {
@@ -9674,13 +9673,11 @@ var Rs = Ms,
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                 }
-            }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
+            }}}, [(e.isGoogleFile) ? t._e() : n("v-btn", { // TODO e.isFolder || 
                 attrs: {
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
-//                    fileurl: fileUrl,
-//                    efilename: e.fileName
                 },
                 on: {
                     click: function(t) {
@@ -9694,7 +9691,6 @@ var Rs = Ms,
                     color: "red"
                 }
             }, [t._v(" mdi-delete ")])], 1)], 1)
-
 
 
             ], 1)
