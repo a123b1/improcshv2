@@ -9651,8 +9651,14 @@ var Rs = Ms,
                 if (confirm(`确定删除文件：“${event.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(event.currentTarget.getAttribute('fileurl'));
+                    n.onreadystatechange = function() {
+                      console.log(n.readyState);
+                      if (n.readyState === 4) {
+                        t.renderPath(t.path, window.props.default_root_id)
+                      }
+                    };
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-                    t.renderPath(t.path, window.props.default_root_id)
+                    
                 }
             }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
