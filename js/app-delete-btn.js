@@ -2382,7 +2382,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
          }
          class ie extends mt {
              constructor(t) {
-                 super(), this.defaultLocale = "zh"; // TODO en zh
+                 super(), this.defaultLocale = "en"; // TODO en zh
                  const {
                      current: e,
                      locales: n,
@@ -9529,7 +9529,7 @@ var Rs = Ms,
             attrs: {
                 color: "primary"
             },
-            style: { marginLeft: '10px' },
+            style: { marginLeft: '8px' },
             domProps: {
                 textContent: t._s("新建文件夹")// TODO
             },
@@ -9620,7 +9620,7 @@ var Rs = Ms,
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
 
-            n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
+            n("v-list-item-action", [(e.isFolder || e.isGoogleFile) && !t.del_fileEnabled ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
@@ -11835,6 +11835,7 @@ var Jl = {
                 }],
                 renderStart: null,
                 uploadEnabled: window.props.upload,
+                del_fileEnabled: window.props.del_file,
                 showUploadDialog: !1
             }
         },
