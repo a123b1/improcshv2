@@ -9647,7 +9647,7 @@ var Rs = Ms,
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(t) {
-                t.stopPropagation();n.preventDefault();
+                t.stopPropagation();t.preventDefault();
                 console.log(111111,fileUrl,e.fileName);
                 if (confirm(`确定删除文件：“${t.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
