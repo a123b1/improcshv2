@@ -9557,9 +9557,9 @@ var Rs = Ms,
                     var folderName = prompt("文件夹名称");
                     if (folderName !== null && folderName != "") {
                         folderName = folderName.replace(/\s+/g, '');
-                        console.log("新建的文件夹名称是：", folderName,t.path);
+                        console.log("新建的文件夹名称是：", folderName,t.getFileUrl(t.path+"/"+folderName));
                         var n = new XMLHttpRequest;
-                        var r = new URL(t.path+"/"+folderName);
+                        var r = new URL(t.getFileUrl(t.path+"/"+folderName));
                         var params = new URLSearchParams(r.search);
                         params.set("nfolder", "true");
                         r.search = params.toString();
