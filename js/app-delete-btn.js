@@ -9649,9 +9649,9 @@ var Rs = Ms,
                 on: {click: function(t) {
                 t.stopPropagation();
                 console.log(111111);
-                if (confirm(`确定删除文件：“${event.target.getAttribute('efilename')}”`)) {
+                if (confirm(`确定删除文件：“${t.target.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
-                    var r = new URL(event.target.getAttribute('fileurl'));
+                    var r = new URL(t.target.getAttribute('fileurl'));
                     n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                     console.log("新建的文件夹名称是：", this.$attrs.fileName);
                 }
