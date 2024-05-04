@@ -9550,18 +9550,17 @@ var Rs = Ms,
             },
             style: { marginLeft: '8px' },
             domProps: {
-                textContent: t._s("新建文件夹")// TODO
+                textContent: t._s("新建文件夹") // TODO
             },
             on: {
                 click: function(e) {
-                    var folderName = prompt("文件夹名称：");
-                    if (folderName !== null) {
+                    var folderName = prompt("文件夹名称");
+                    if (folderName !== null && folderName != "") {
                         console.log("新建的文件夹名称是：", folderName);
                     }
                 }
             }
         }),
-
 
         ], 1)], 1) : t._e(),
         n("v-row", {
