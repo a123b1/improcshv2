@@ -9567,9 +9567,13 @@ var Rs = Ms,
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener)
                     }
                 }
-            }, [n("v-list-item-avatar", {
+            }, [
+            
+            n("v-list-item-avatar", {
                 staticClass: "ma-0"
-            }, [n("v-icon", [t._v(t._s(e.icon))])], 1), n("v-list-item-content", {
+            }, [n("v-icon", [t._v(t._s(e.icon))])], 1), 
+            
+            n("v-list-item-content", {
                 staticClass: "py-2"
             }, [n("v-list-item-title", {
                 domProps: {
@@ -9579,7 +9583,9 @@ var Rs = Ms,
                 domProps: {
                     textContent: t._s(e.fileSize)
                 }
-            })], 1), n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
+            })], 1),
+            
+             n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
@@ -9595,8 +9601,9 @@ var Rs = Ms,
                 attrs: {
                     color: "black"
                 }
-            }, [t._v(" mdi-file-download ")])], 1),
-            e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
+            }, [t._v(" mdi-file-download ")])], 1)], 1),
+            
+            n("v-list-item-action", [e.isFolder || e.isGoogleFile ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
@@ -9612,7 +9619,11 @@ var Rs = Ms,
                 attrs: {
                     color: "black"
                 }
-            }, [t._v(" mdi-delete ")])], 1)], 1)], 1)
+            }, [t._v(" mdi-delete ")])], 1)], 1)
+            
+            
+            
+            ], 1)
         })), 1)], 1)], 1)], 1)
     },
     js = [];
