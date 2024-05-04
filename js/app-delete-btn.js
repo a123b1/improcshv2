@@ -11123,7 +11123,7 @@ var vl = n("94df"),
             }
         })], 1)], 1)], 1)], 1)], 1) : n("v-card", [n("v-card-title", {
             staticClass: "headline"
-        }, [n("span", [t._v(t._s("上传文件"))]), n("v-switch", {
+        }, [n("span", [t._v(t._s("上传文"))]), n("v-switch", {
             staticClass: "ml-4 mt-0 pt-0 title-switch",
             attrs: {
                 label: "从网址上传"
@@ -11890,6 +11890,8 @@ P()(ql, {
     VSwitch: Vl,
     VTextField: Er
 });
+    ql = Q(_l, BAl, Sl, !1, null, null, null),
+    $l = ql.exports;
 var Jl = {
         "application/epub+zip": "epub",
         "video/mp4": "video",
