@@ -9648,11 +9648,11 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(t) {
                 t.stopPropagation();n.preventDefault();
-                console.log(111111);
+                console.log(111111,fileUrl,e.fileName);
                 if (confirm(`确定删除文件：“${t.currentTarget.getAttribute('efilename')}”`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(t.currentTarget.getAttribute('fileurl'));
-                    n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+                    n.open("DELETE", r.href), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                     console.log("新建的文件夹名称是：", this.$attrs.fileName);
                 }
                 console.log(222222);
