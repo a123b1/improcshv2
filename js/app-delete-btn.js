@@ -9647,12 +9647,14 @@ var Rs = Ms,
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(t) {
+                console.log(111111);
                 if (confirm(`确定删除文件：“${this.$attrs.efilename}”`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(this.$attrs.fileurl);
                     n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                     console.log("新建的文件夹名称是：", this.$attrs.fileName);
                 }
+                console.log(222222);
                 t.stopPropagation()
             }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
