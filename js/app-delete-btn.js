@@ -9525,11 +9525,11 @@ var Rs = Ms,
                 }
             }
         }),
-        n("div", { style: { width: '10px' } }),
         n("v-btn", {
             attrs: {
                 color: "primary"
             },
+            style: { marginLeft: '10px' },
             domProps: {
                 textContent: t._s("新建文件夹")// TODO
             },
