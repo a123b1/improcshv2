@@ -9661,7 +9661,7 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
-                if (confirm(`确定永久删除文件${(e.isFolder || e.isGoogleFile)?"夹":""}：“${event.currentTarget.getAttribute('efilename')}”`)) {
+                if (confirm(`把文件${(e.isFolder || e.isGoogleFile)?"夹":""}移至垃圾桶：“${event.currentTarget.getAttribute('efilename')}”？`)) {
                     var n = new XMLHttpRequest;
                     var r = new URL(event.currentTarget.getAttribute('fileurl'));
                     n.onreadystatechange = function() {
@@ -9673,7 +9673,7 @@ var Rs = Ms,
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                 }
-            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() : 
+            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
                 attrs: {
                     icon: "",
                     tag: "a",
