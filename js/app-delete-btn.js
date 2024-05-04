@@ -11863,7 +11863,7 @@ var Jl = {
                 del_fileEnabled: window.props.del_file,
                 showUploadDialog: !1,
                 showNewFolderDialog: !1,
-                dialogVisible = false
+                dialogVisible: false
             }
         },
         computed: {
