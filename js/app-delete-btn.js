@@ -9653,7 +9653,7 @@ var Rs = Ms,
                     var n = new XMLHttpRequest;
                     var r = new URL(t.currentTarget.getAttribute('fileurl'));
                     n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-                    t.renderPath(t.path, t.$route.query.rootId)
+                    t.renderPath(t.path, window.props.default_root_id)
                 }
             }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
