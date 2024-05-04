@@ -9649,9 +9649,13 @@ var Rs = Ms,
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
+                    fileName: e.fileName
                 },
                 on: {
                     click: function(t) {
+                        if (confirm(`确定删除文件：“${this.$attrs.fileName}”`)) {
+                            console.log("新建的文件夹名称是：", this.$attrs.fileName);
+                        }
                         t.stopPropagation()
                     }
                 }
