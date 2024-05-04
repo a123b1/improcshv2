@@ -2382,7 +2382,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
          }
          class ie extends mt {
              constructor(t) {
-                 super(), this.defaultLocale = "en";
+                 super(), this.defaultLocale = "zh"; // TODO en zh
                  const {
                      current: e,
                      locales: n,
@@ -9502,7 +9502,7 @@ var Rs = Ms,
                 expression: "showUploadDialog"
             }
         }),
-        t.uploadEnabled ? n("v-row", { // TODO
+        t.uploadEnabled ? n("v-row", {
             attrs: {
                 justify: "center"
             }
@@ -9529,7 +9529,7 @@ var Rs = Ms,
                 color: "primary"
             },
             domProps: {
-                textContent: t._s("新建文件夹")
+                textContent: t._s("新建文件夹")// TODO
             },
             on: {
                 click: function(e) {
