@@ -9649,15 +9649,15 @@ var Rs = Ms,
                     icon: "",
                     tag: "a",
                     href: "", // javascript:void(0)
-                    fileUrl: fileUrl,
-                    efileName: e.fileName
+                    fileurl: fileUrl,
+                    efilename: e.fileName
                 },
                 on: {
                     click: function(t) {
-                        if (confirm(`确定删除文件：“${this.$attrs.efileName}”`)) {
+                        if (confirm(`确定删除文件：“${this.$attrs.efilename}”`)) {
                             var n = new XMLHttpRequest;
-                            var r = new URL(fileUrl);
-                            n.open("PUT", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+                            var r = new URL(this.$attrs.fileurl);
+                            n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
                             console.log("新建的文件夹名称是：", this.$attrs.fileName);
                         }
                         t.stopPropagation()
