@@ -11892,6 +11892,21 @@ P()(ql, {
 });
     ql = Q(_l, BAl, Sl, !1, null, null, null),
     $l = ql.exports;
+P()(ql, {
+    VBtn: Mn,
+    VCard: ei,
+    VCardActions: ni,
+    VCardText: ii,
+    VCardTitle: ri,
+    VCol: di,
+    VContainer: pi,
+    VDialog: Li,
+    VFileInput: Nl,
+    VProgressLinear: Kn,
+    VRow: $i,
+    VSwitch: Vl,
+    VTextField: Er
+});
 var Jl = {
         "application/epub+zip": "epub",
         "video/mp4": "video",
