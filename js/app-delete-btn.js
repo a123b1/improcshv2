@@ -9524,6 +9524,18 @@ var Rs = Ms,
                     t.showUploadDialog = !0
                 }
             }
+        }),n("v-btn", {
+            attrs: {
+                color: "primary"
+            },
+            domProps: {
+                textContent: t._s("新建文件夹")
+            },
+            on: {
+                click: function(e) {
+                    t.showUploadDialog = !0
+                }
+            }
         })], 1)], 1) : t._e(),
         n("v-row", {
             attrs: {
