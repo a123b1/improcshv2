@@ -9560,8 +9560,8 @@ var Rs = Ms,
                 }
             }
         }),
-        
-        n("v-dialog", {
+
+n("v-dialog", {
   props: {
     value: t.dialogVisible, // 控制对话框的显示状态
   },
@@ -9615,8 +9615,8 @@ var Rs = Ms,
     ])
   ])
 ])
-        
-        
+
+
         ], 1)], 1) : t._e(),
         n("v-row", {
             attrs: {
@@ -11916,7 +11916,8 @@ var Jl = {
                 uploadEnabled: window.props.upload,
                 del_fileEnabled: window.props.del_file,
                 showUploadDialog: !1,
-                showNewFolderDialog: !1
+                showNewFolderDialog: !1,
+                dialogVisible = false;
             }
         },
         computed: {
