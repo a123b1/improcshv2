@@ -9620,7 +9620,7 @@ var Rs = Ms,
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
 
-            n("v-list-item-action", [(e.isFolder || e.isGoogleFile) && !t.del_fileEnabled ? t._e() : n("v-btn", { // TODO
+            n("v-list-item-action", [(e.isFolder || e.isGoogleFile) || !t.del_fileEnabled ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
