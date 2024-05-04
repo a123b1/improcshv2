@@ -9644,24 +9644,26 @@ var Rs = Ms,
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
 
-            !t.del_fileEnabled ? t._e() : n("v-list-item-action", 
-            {on: {click: function(t) {console.log(1111111);}}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
+            !t.del_fileEnabled ? t._e() : n("v-list-item-action",
+            {   attrs: {fileurl: fileUrl,efilename: e.fileName},
+                on: {click: function(t) {
+                if (confirm(`确定删除文件：“${this.$attrs.efilename}”`)) {
+                    var n = new XMLHttpRequest;
+                    var r = new URL(this.$attrs.fileurl);
+                    n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+                    console.log("新建的文件夹名称是：", this.$attrs.fileName);
+                }
+                t.stopPropagation()
+            }}}, [(e.isFolder || e.isGoogleFile) ? t._e() : n("v-btn", { // TODO
                 attrs: {
                     icon: "",
                     tag: "a",
                     href: "", // javascript:void(0)
-                    fileurl: fileUrl,
-                    efilename: e.fileName
+//                    fileurl: fileUrl,
+//                    efilename: e.fileName
                 },
                 on: {
                     click: function(t) {
-                        if (confirm(`确定删除文件：“${this.$attrs.efilename}”`)) {
-                            var n = new XMLHttpRequest;
-                            var r = new URL(this.$attrs.fileurl);
-                            n.open("DELETE", fileUrl), t.localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-                            console.log("新建的文件夹名称是：", this.$attrs.fileName);
-                        }
-                        t.stopPropagation()
                     }
                 }
             }, [n("v-icon", {
@@ -9670,7 +9672,7 @@ var Rs = Ms,
                 },
                 style: {
                     color: "red"
-                },on: {click: function(t) {console.log(222222);}}
+                }
             }, [t._v(" mdi-delete ")])], 1)], 1)
 
 
