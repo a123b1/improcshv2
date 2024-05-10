@@ -9686,7 +9686,7 @@ var Rs = Ms,
 
             ], 1)], 1),
 
-            !t.uploadEnabled || e.isFolder || e.isGoogleFile ? t._e() : n("v-list-item-action",
+            !t.uploadEnabled || e.isFolder || e.isGoogleFile||!e.fileName.endsWith(".txt") ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName}, style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
