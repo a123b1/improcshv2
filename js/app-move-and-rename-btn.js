@@ -12132,7 +12132,7 @@ var Jl = {
                 var n = this;
                 console.log("renderPath",t, e);
                 return c(regeneratorRuntime.mark((function i() {
-                    var r, o, a;
+                    var r, o, a, lo;
                     return regeneratorRuntime.wrap((function(i) {
                         while (1) switch (i.prev = i.next) {
                             case 0:
@@ -12163,15 +12163,18 @@ var Jl = {
                                   window.history.replaceState(null, null, currentUrl );
                                   console.log(currentUrl);
                                   }
-                                o = i.sent;
+                                
 //                                n.currentDirId  = o.headers.get("current_dir_id");
 //                                console.log(606,n.currentDirId,o, );
-                                let _L_o = o.json();// a = o.files,
+//                                let _L_o = o.json();// a = o.files,
 //                                a = _L_o.files; // o = i.sent, a = _L_o.files,
-                                a= Array.from(_L_o.files);
-                                if (r === n.renderStart) {
-                                    n.currentDirId  = o.headers.get("current_dir_id");
-                                    console.log(66,o,_L_o,a,n.currentDirId,_L_o.files);
+//                                a= Array.from(_L_o.files);
+                                lo = i.sent;
+                                o = lo.json();
+                                if (a = o.files,r === n.renderStart) {
+//                                    n.currentDirId  = o.headers.get("current_dir_id");
+                                    n.currentDirId  =lo.headers.get("current_dir_id");
+                                    console.log(66,o,a,n.currentDirId,);
                                     i.next = 10;
                                     break
                                 }
