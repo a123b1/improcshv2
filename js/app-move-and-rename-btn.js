@@ -9531,7 +9531,8 @@ var Rs = Ms,
                 md: "8",
                 lg: "6"
             }
-        }, [n("v-btn", {
+        }, [
+        n("v-btn", {
             attrs: {
                 color: "primary"
             },
@@ -9577,21 +9578,19 @@ var Rs = Ms,
             }
         }),
 
-         n("v-btn", {
+            n("v-btn", {
             attrs: {
                 color: "primary"
             },
-            style: { marginLeft: '8px' },
             domProps: {
-                textContent: t._s("新建文本文档") // TODO
+                textContent: t._s("新建文档")// TODO
             },
             on: {
                 click: function(e) {
-
+                    t.showUploadDialog = !0
                 }
             }
         }),
-
         ], 1)], 1) : t._e(),
         n("v-row", {
             attrs: {
@@ -9696,8 +9695,8 @@ var Rs = Ms,
                 style: {
                     color: "#E68920"
                 }
-            }, [t._v(" mdi-rename ")])], 1)], 1)
-
+            }, [t._v(" mdi-rename ")])], 1)], 1),
+            
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(event) {
