@@ -9544,6 +9544,7 @@ var Rs = Ms,
                 }
             }
         }),
+
         n("v-btn", {
             attrs: {
                 color: "primary"
@@ -9572,6 +9573,21 @@ var Rs = Ms,
                         n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                     }
+                }
+            }
+        }),
+
+         n("v-btn", {
+            attrs: {
+                color: "primary"
+            },
+            style: { marginLeft: '8px' },
+            domProps: {
+                textContent: t._s("新建文本文档") // TODO
+            },
+            on: {
+                click: function(e) {
+
                 }
             }
         }),
@@ -9657,6 +9673,30 @@ var Rs = Ms,
                     color: "blue"
                 }
             }, [t._v(" mdi-file-download ")])], 1)], 1),
+
+            !t.uploadEnabled ? t._e() : n("v-list-item-action",
+            {   attrs: {fileurl: fileUrl,efilename: e.fileName},
+                on: {click: function(event) {
+                event.stopPropagation();event.preventDefault();
+
+            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
+                attrs: {
+                    icon: "",
+                    tag: "a",
+                    href: "javascript:void(0)",
+                },
+                on: {
+                    click: function(t) {
+                    }
+                }
+            }, [n("v-icon", {
+                attrs: {
+                    color: "#E68920"
+                },
+                style: {
+                    color: "#E68920"
+                }
+            }, [t._v(" mdi-rename ")])], 1)], 1)
 
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
