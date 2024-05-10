@@ -12130,7 +12130,6 @@ var Jl = {
             },
             renderPath: function(t, e) {
                 var n = this;
-//                n.currentDirId =
                 console.log("renderPath",t, e);
                 return c(regeneratorRuntime.mark((function i() {
                     var r, o, a;
@@ -12153,9 +12152,9 @@ var Jl = {
                                     qs: {
                                         rootId: e
                                     }
-                                }).json();
+                                }); // .json()
                             case 6:
-                          
+                                console.log(6,o);
                                 var regex = /rootId=/;
                                 var currentUrl = window.location.href;
                                 if (!regex.test(currentUrl)) {
@@ -12166,12 +12165,15 @@ var Jl = {
                                   console.log(currentUrl);
                                   }
                           
-                                if (o = i.sent, a = o.files, r === n.renderStart) {
+                                if (o = i.sent, a = (await o.json()).files, r === n.renderStart) { // a = o.files,
+                                console.log(66,o);
                                     i.next = 10;
                                     break
                                 }
                                 return i.abrupt("return");
                             case 10:
+
+//                n.currentDirId =
                                 n.list = a.map((function(e) {
                                     e.mimeType = e.mimeType.replace("; charset=utf-8", "");
                                     var n = "application/vnd.google-apps.folder" === e.mimeType,
