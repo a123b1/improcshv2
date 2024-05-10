@@ -12164,8 +12164,10 @@ var Jl = {
                                   window.history.replaceState(null, null, currentUrl );
                                   console.log(currentUrl);
                                   }
-                                let _L_o;
-                                if (o = i.sent, _L_o = await o.json(), a = _L_o.files, r === n.renderStart) { // a = o.files,
+                                o = i.sent;
+                                console.log(606,o);
+                                let _L_o;// a = o.files,
+                                if (_L_o = o.json(), a = _L_o.files, r === n.renderStart) {
                                     console.log(66,o,_L_o);
                                     o = _L_o;
                                     i.next = 10;
