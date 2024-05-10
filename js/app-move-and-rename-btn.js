@@ -9797,38 +9797,38 @@ var Rs = Ms,
     })
   ])
             ], 1)], 1),
-
-            !t.del_fileEnabled ? t._e() : n("v-list-item-action",
+            
+                   !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
+                if (confirm(`永久删除文件${(e.isFolder || e.isGoogleFile)?"夹":""}：“${event.currentTarget.getAttribute('efilename')}”？`)) {
+                    var n = new XMLHttpRequest;
+                    var r = new URL(event.currentTarget.getAttribute('fileurl'));
+                    var params = new URLSearchParams(r.search);
+                    params.set("delete_forever", "true");
+//                    params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                    r.search = params.toString();
+                    n.onreadystatechange = function() {
+//                      console.log(n.readyState);
+                      if (n.readyState === 4) {
+                        t.renderPath(t.path, window.props.default_root_id)
+                      }
+                    };
+                    n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
+                }
             }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
                 attrs: {
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
-                      title: "永久删除",
+                    title: "永久删除",
                 },
                 on: {
-                    click: function(event) {
-                     if (confirm(`永久删除文件${(e.isFolder || e.isGoogleFile)?"夹":""}：“${event.currentTarget.getAttribute('efilename')}”？`)) {
-                        var n = new XMLHttpRequest;
-                        var r = new URL(event.currentTarget.getAttribute('fileurl'));
-                        var params = new URLSearchParams(r.search);
-                        params.set("delete_forever", "true");
-                        params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
-                        r.search = params.toString();
-                        n.onreadystatechange = function() {
-    //                      console.log(n.readyState);
-                          if (n.readyState === 4) {
-                            t.renderPath(t.path, window.props.default_root_id)
-                          }
-                        };
-                        n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-
+                    click: function(t) {
+                    }
                 }
-                    }
-                    }
             }, [
             n("svg", {
     attrs: {
@@ -9846,6 +9846,7 @@ var Rs = Ms,
     })
   ])
             ], 1)], 1),
+
 
             ], 1)
         })), 1)], 1)], 1)], 1)
