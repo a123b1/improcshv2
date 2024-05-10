@@ -12154,7 +12154,6 @@ var Jl = {
                                     }
                                 }); // .json()
                             case 6:
-                                console.log(6,o);
                                 var regex = /rootId=/;
                                 var currentUrl = window.location.href;
                                 if (!regex.test(currentUrl)) {
@@ -12164,13 +12163,13 @@ var Jl = {
                                   window.history.replaceState(null, null, currentUrl );
                                   console.log(currentUrl);
                                   }
-                                o = i.sent;
-                                n.currentDirId  = o.headers.get("current_dir_id");
-                                console.log(606,n.currentDirId,o, );
+//                                o = i.sent;
+//                                n.currentDirId  = o.headers.get("current_dir_id");
+//                                console.log(606,n.currentDirId,o, );
                                 let _L_o ;// a = o.files,
-                                if ( a = o.json().files, r === n.renderStart) {
-                                    console.log(66,o,_L_o,a);
-                                    o = _L_o;
+                                if (o = i.sent, a = o.json().files, r === n.renderStart) {
+                                    n.currentDirId  = o.headers.get("current_dir_id");
+                                    console.log(66,o,_L_o,a,n.currentDirId);
                                     i.next = 10;
                                     break
                                 }
