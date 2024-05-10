@@ -1145,6 +1145,38 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 //                     }
 //                 }, [n("v-icon", [t._v("mdi-github-circle")]), t._v(" GitHub")], 1) // TODO
 
+                 n("v-btn", {attrs: {
+                    icon: "",
+                    tag: "a",
+                    href: "javascript:void(0)",
+                    title: "打开Google网盘",
+                },
+                on: {
+                    click: function(event) {
+                      event.stopPropagation();event.preventDefault();
+                      console.log("打开Google网盘");
+                      console.log(t,event);
+
+                    }
+                    }
+                }
+            }, [ n("svg", {
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: "24",
+      height: "24"
+    }
+  }, [
+    n("path", {
+      attrs: {
+        fill: "#FFFFFF",
+        d: "M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z"
+      }
+    })
+  ])
+            ], 1),
+
                  ], 1)], 1), n("v-content", [n("router-view")], 1), n("LoginDialog", {
                      attrs: {
                          show: t.showAuthInput
@@ -9622,7 +9654,7 @@ var Rs = Ms,
              }
          //console.log(window.props.default_root_id);
          //console.log(t.$route.query.rootId);
-         //e.resourcePath = e.resourcePath +"?rootId=1E_MlWv_zx5w6upKAsHvXHWS0wXm7aZ9J";
+         //e.resourcePath = e.resourcePath +"?rootId=1E_MlWvvXHWS0wXm7aZ9J";
          //console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
             return n("v-list-item", {
                 key: e.id,
@@ -9797,7 +9829,7 @@ var Rs = Ms,
     })
   ])
             ], 1)], 1),
-            
+
                    !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},style: { marginLeft: '8px' },
                 on: {click: function(event) {
@@ -12044,7 +12076,8 @@ var Jl = {
                 del_fileEnabled: window.props.del_file,
                 showUploadDialog: !1,
                 showNewFolderDialog: !1, // TODO
-                dialogVisible: false
+                dialogVisible: false,
+                currentDirId:"",
             }
         },
         computed: {
@@ -12095,6 +12128,7 @@ var Jl = {
             },
             renderPath: function(t, e) {
                 var n = this;
+                n.currentDirId =
                 return c(regeneratorRuntime.mark((function i() {
                     var r, o, a;
                     return regeneratorRuntime.wrap((function(i) {
