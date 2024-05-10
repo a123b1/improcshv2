@@ -1149,13 +1149,13 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
-                    title: "打开Google网盘",
+                    title: "在Google网盘打开",
+                    text: "转到谷歌网盘",
                 },
                 on: {
                     click: function(event) {
                       event.stopPropagation();event.preventDefault();
-                      console.log("打开Google网盘");
-                      console.log(t,event);
+                      console.log(t.currentDirId,event);
 
                     }
                 }
@@ -9518,7 +9518,7 @@ var Rs = Ms,
                 },
                 on: {
                     click: function(n) {
-                        return t.goPath(e.path)
+                        return t.goPath(e.path,0,0) // TODO
                     }
                 }
             }, [t._v(t._s(e.name))])]
@@ -9655,16 +9655,18 @@ var Rs = Ms,
          //console.log(t.$route.query.rootId);
          //e.resourcePath = e.resourcePath +"?rootId=1E_MlWvvXHWS0wXm7aZ9J";
          //console.log(e.resourcePath,t.getFileUrl(e.resourcePath),e.opener);
-            return n("v-list-item", {
+            return n("v-list-item",
+             {
                 key: e.id,
                 staticClass: "pl-0",
                 attrs: {
                     tag: "a",
+                    resourceId: e.resourceId,
                     href: fileUrl //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                 },
                 on: {
                     click: function(n) {
-                        return n.preventDefault(), t.goPath(e.resourcePath, e.opener)
+                        return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
                     }
                 }
             }, [
@@ -12096,7 +12098,8 @@ var Jl = {
             }
         },
         methods: {
-            goPath: function(t, e) {
+            goPath: function(t, e, item) { // TODO
+                console.log("goPath",t, e, item);
                 var n = {
                     rootId: this.$route.query.rootId
                 };
@@ -12128,6 +12131,7 @@ var Jl = {
             renderPath: function(t, e) {
                 var n = this;
 //                n.currentDirId =
+                console.log("renderPath",t, e);
                 return c(regeneratorRuntime.mark((function i() {
                     var r, o, a;
                     return regeneratorRuntime.wrap((function(i) {
@@ -12174,6 +12178,7 @@ var Jl = {
                                         i = e.mimeType.includes("vnd.google-apps"),
                                         r = wl.a.resolve(t, e.name) + (n ? "/" : ""),
                                         o = {
+                                            resourceId: e.id,
                                             fileName: e.name,
                                             modifiedTime: gl(new Date(e.modifiedTime), "yyyy/MM/dd HH:mm:ss"),
                                             isFolder: n,
