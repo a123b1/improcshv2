@@ -12155,7 +12155,7 @@ var Jl = {
                                 }).then(response => {
                                         n.currentDirId = response.headers.get("current_dir_id");
                                         return response.json();
-                                        ); // .json()
+                                        }); // .json()
                             case 6:
                                 var regex = /rootId=/;
                                 var currentUrl = window.location.href;
