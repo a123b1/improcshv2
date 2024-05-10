@@ -1155,8 +1155,8 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                 on: {
                     click: function(event) {
                       event.stopPropagation();event.preventDefault();
-                      console.log(currentDirId,event);
-
+                      let _link = `https://drive.google.com/drive/folders/${currentDirId}`;
+                      window.open(_link, '_self');
                     }
                 }
             }, [ n("svg", {
@@ -12154,7 +12154,6 @@ var Jl = {
                                         rootId: e
                                     }
                                 }).then(response => {
-                                 console.log(222,currentDirId,);
                                         currentDirId = response.headers.get("current_dir_id");
                                         return response.json();
                                         }); // .json()
@@ -12170,7 +12169,6 @@ var Jl = {
                                   }
 
                                 if (o = i.sent,a = o.files,r === n.renderStart) {
-//                                    console.log(66,o,a,n.currentDirId,);
                                     i.next = 10;
                                     break
                                 }
