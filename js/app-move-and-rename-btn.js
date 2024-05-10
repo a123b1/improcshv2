@@ -12166,8 +12166,8 @@ var Jl = {
                                 o = i.sent;
 //                                n.currentDirId  = o.headers.get("current_dir_id");
 //                                console.log(606,n.currentDirId,o, );
-                                let _L_o;// a = o.files,
-                                a = o.json().files; // o = i.sent, a = _L_o.files, 
+                                let _L_o = o.json();// a = o.files,
+                                a = _L_o.files; // o = i.sent, a = _L_o.files,
                                 if (r === n.renderStart) {
                                     n.currentDirId  = o.headers.get("current_dir_id");
                                     console.log(66,o,_L_o,a,n.currentDirId);
