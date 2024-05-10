@@ -9666,17 +9666,27 @@ var Rs = Ms,
                         t.stopPropagation()
                     }
                 }
-            }, [n("v-icon", {
-                attrs: {
-                    color: "blue"
-                },
-                style: {
-                    color: "blue"
-                }
-            }, [t._v(" mdi-file-download ")])], 1)], 1),
+            }, [
+             n("svg", {
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: "24",
+      height: "24"
+    }
+  }, [
+    n("path", {
+      attrs: {
+        fill: "#2196F3",
+        d: "M14,2H6C4.89,2 4,2.89 4,4V20C4,21.11 4.89,22 6,22H18C19.11,22 20,21.11 20,20V8L14,2M12,19L8,15H10.5V12H13.5V15H16L12,19M13,9V3.5L18.5,9H13Z"
+      }
+    })
+  ])
+
+            ], 1)], 1),
 
             !t.uploadEnabled ? t._e() : n("v-list-item-action",
-            {   attrs: {fileurl: fileUrl,efilename: e.fileName},
+            {   attrs: {fileurl: fileUrl,efilename: e.fileName}, style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
 
@@ -9709,7 +9719,7 @@ var Rs = Ms,
 
 
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
-            {   attrs: {fileurl: fileUrl,efilename: e.fileName},
+            {   attrs: {fileurl: fileUrl,efilename: e.fileName},style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
                 if (confirm(`把文件${(e.isFolder || e.isGoogleFile)?"夹":""}移至垃圾桶：“${event.currentTarget.getAttribute('efilename')}”？`)) {
@@ -9734,15 +9744,55 @@ var Rs = Ms,
                     click: function(t) {
                     }
                 }
-            }, [n("v-icon", {
-                attrs: {
-                    color: "red"
-                },
-                style: {
-                    color: "red"
-                }
-            }, [t._v(" mdi-delete ")])], 1)], 1)
+            }, [
+            n("svg", {
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: "24",
+      height: "24"
+    }
+  }, [
+    n("path", {
+      attrs: {
+        fill: "#F44336",
+        d: "M21.03,3L18,20.31C17.83,21.27 17,22 16,22H8C7,22 6.17,21.27 6,20.31L2.97,3H21.03M5.36,5L8,20H16L18.64,5H5.36M9,18V14H13V18H9M13,13.18L9.82,10L13,6.82L16.18,10L13,13.18Z"
+      }
+    })
+  ])
+            ], 1)], 1),
 
+            !t.del_fileEnabled ? t._e() : n("v-list-item-action",
+            {   attrs: {fileurl: fileUrl,efilename: e.fileName},style: { marginLeft: '8px' },
+                on: {click: function(event) {
+                event.stopPropagation();event.preventDefault();
+            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
+                attrs: {
+                    icon: "",
+                    tag: "a",
+                    href: "javascript:void(0)",
+                },
+                on: {
+                    click: function(t) {
+                    }
+                }
+            }, [
+            n("svg", {
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: "24",
+      height: "24"
+    }
+  }, [
+    n("path", {
+      attrs: {
+        fill: "#E50D0D",
+        d: "M21.03,3L18,20.31C17.83,21.27 17,22 16,22H8C7,22 6.17,21.27 6,20.31L2.97,3H21.03M5.36,5L8,20H16L18.64,5H5.36M9,18V14H13V18H9M13,13.18L9.82,10L13,6.82L16.18,10L13,13.18Z"
+      }
+    })
+  ])
+            ], 1)], 1),
 
             ], 1)
         })), 1)], 1)], 1)], 1)
