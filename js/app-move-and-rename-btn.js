@@ -1155,7 +1155,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                 on: {
                     click: function(event) {
                       event.stopPropagation();event.preventDefault();
-                      console.log(t.currentDirId,n.currentDirId,event);
+                      console.log(Kl,t.currentDirId,n.currentDirId,event);
 
                     }
                 }
@@ -12078,7 +12078,7 @@ var Jl = {
                 showUploadDialog: !1,
                 showNewFolderDialog: !1, // TODO
                 dialogVisible: false,
-                currentDirId:"",
+                currentDirId:"123",
             }
         },
         computed: {
@@ -12153,6 +12153,7 @@ var Jl = {
                                         rootId: e
                                     }
                                 }).then(response => {
+                                 console.log(222,n.currentDirId,);
                                         n.currentDirId = response.headers.get("current_dir_id");
                                         return response.json();
                                         }); // .json()
