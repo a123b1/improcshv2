@@ -1146,7 +1146,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 //                 }, [n("v-icon", [t._v("mdi-github-circle")]), t._v(" GitHub")], 1) // TODO
 
                  n("v-btn", {attrs: {
-                    id:"togoogledrive"
+                    id:"togoogledrive",
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
