@@ -1158,7 +1158,6 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                       console.log(t,event);
 
                     }
-                    }
                 }
             }, [ n("svg", {
     attrs: {
