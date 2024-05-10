@@ -9578,19 +9578,21 @@ var Rs = Ms,
             }
         }),
 
-            n("v-btn", {
+    n("v-btn", {
             attrs: {
                 color: "primary"
             },
+            style: { marginLeft: '8px' },
             domProps: {
-                textContent: t._s("新建文档")// TODO
+                textContent: t._s("新建文档") // TODO
             },
             on: {
                 click: function(e) {
-                    t.showUploadDialog = !0
+
                 }
             }
         }),
+
         ], 1)], 1) : t._e(),
         n("v-row", {
             attrs: {
@@ -9688,15 +9690,24 @@ var Rs = Ms,
                     click: function(t) {
                     }
                 }
-            }, [n("v-icon", {
-                attrs: {
-                    color: "#E68920"
-                },
-                style: {
-                    color: "#E68920"
-                }
-            }, [t._v(" mdi-rename ")])], 1)], 1),
-            
+            }, [ n("svg", {
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: "24",
+      height: "24"
+    }
+  }, [
+    n("path", {
+      attrs: {
+        fill: "#E68920",
+        d: "M15 16L11 20H21V16H15M12.06 7.19L3 16.25V20H6.75L15.81 10.94L12.06 7.19M18.71 8.04C19.1 7.65 19.1 7 18.71 6.63L16.37 4.29C16.17 4.09 15.92 4 15.66 4C15.41 4 15.15 4.1 14.96 4.29L13.13 6.12L16.88 9.87L18.71 8.04Z"
+      }
+    })
+  ])
+            ], 1)], 1),
+
+
             !t.del_fileEnabled ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName},
                 on: {click: function(event) {
