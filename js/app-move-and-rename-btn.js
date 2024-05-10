@@ -1155,7 +1155,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                 on: {
                     click: function(event) {
                       event.stopPropagation();event.preventDefault();
-                      console.log(t.currentDirId,event);
+                      console.log(t.currentDirId,n.currentDirId,event);
 
                     }
                 }
@@ -12167,15 +12167,8 @@ var Jl = {
                                   console.log(currentUrl);
                                   }
 
-//                                n.currentDirId  = o.headers.get("current_dir_id");
-//                                console.log(606,n.currentDirId,o, );
-//                                let _L_o = o.json();// a = o.files,
-//                                a = _L_o.files; // o = i.sent, a = _L_o.files,
-//                                a= Array.from(_L_o.files);
                                 if (o = i.sent,a = o.files,r === n.renderStart) {
-//                                    n.currentDirId  = o.headers.get("current_dir_id");
-//                                    n.currentDirId  =lo.headers.get("current_dir_id");
-                                    console.log(66,o,a,n.currentDirId,);
+//                                    console.log(66,o,a,n.currentDirId,);
                                     i.next = 10;
                                     break
                                 }
