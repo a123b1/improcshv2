@@ -9796,7 +9796,6 @@ var Rs = Ms,
                 }
                     }
                     }
-                }
             }, [
             n("svg", {
     attrs: {
