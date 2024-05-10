@@ -12127,7 +12127,7 @@ var Jl = {
             },
             renderPath: function(t, e) {
                 var n = this;
-                n.currentDirId =
+//                n.currentDirId =
                 return c(regeneratorRuntime.mark((function i() {
                     var r, o, a;
                     return regeneratorRuntime.wrap((function(i) {
