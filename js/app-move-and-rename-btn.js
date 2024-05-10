@@ -1146,6 +1146,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 //                 }, [n("v-icon", [t._v("mdi-github-circle")]), t._v(" GitHub")], 1) // TODO
 
                  n("v-btn", {attrs: {
+                    id:"togoogledrive"
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
@@ -9762,7 +9763,7 @@ var Rs = Ms,
                     icon: "",
                     tag: "a",
                     href: "javascript:void(0)",
-                        title: "编辑文档",
+                        title: "重命名",
                 },
                 on: {
                     click: function(t) {
@@ -12155,6 +12156,12 @@ var Jl = {
                                     }
                                 }).then(response => {
                                         currentDirId = response.headers.get("current_dir_id");
+                                        var link = document.getElementById('togoogledrive');
+                                          if (link) {
+                                            link.href = `https://drive.google.com/drive/folders/${currentDirId}`;
+                                          } else {
+                                            console.log('Element with ID "togoogledrive" not found');
+                                          }
                                         return response.json();
                                         }); // .json()
                             case 6:
