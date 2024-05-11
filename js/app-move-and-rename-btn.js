@@ -1142,7 +1142,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                                 n.onreadystatechange = function() {
                                   if (n.readyState === 4) {
 //                                    t.renderPath(t.path, window.props.default_root_id);
-                                    renderPath_public("/", window.props.default_root_id);
+                                    renderPath_public.renderPath("/", window.props.default_root_id);
                                   }
                                 };
                                  console.log(r.href);
@@ -12327,7 +12327,7 @@ var Jl = {
                 return e && (n += "?rootId=" + e), n
             },
             renderPath: function(t, e) {
-                renderPath_public = renderPath;
+                renderPath_public = this;
                 var n = this;
                 console.log("renderPath",t, e);
                 return c(regeneratorRuntime.mark((function i() {
