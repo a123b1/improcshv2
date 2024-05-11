@@ -1142,7 +1142,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                                 n.onreadystatechange = function() {
                                   if (n.readyState === 4) {
 //                                    t.renderPath(t.path, window.props.default_root_id);
-                                    renderPath_public.renderPath("/", window.props.default_root_id);
+                                    renderPath_public.renderPath(window.location.pathname, window.props.default_root_id);
                                   }
                                 };
                                  console.log(r.href);
