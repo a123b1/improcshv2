@@ -9408,11 +9408,11 @@ function Ls(t, e) {
             n > -1 && t.splice(n, 1)
         }
 }
-
+export default {
 function dragStart(event) {
     console.log("开始拖拽。");
            }
-
+}
 function Os(t, e, n) {
     var i = "hash" === n ? "#" + e : e;
     return t ? Po(t + "/" + i) : i
@@ -9669,26 +9669,28 @@ var Rs = Ms,
                     resourceId: e.resourceId,
                     href: fileUrl, //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                     draggable: "true",
-//                    ondragstart: "dragStart(event)",
+                    ondragstart: "dragStart(event)",
+                    dragend: "dragEnd(event)",
+                    drop: "drop(event)",
 
                 },
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
                     },
-                    dragStart: function(event) {
-                      console.log("开始拖拽。",t._s(e.fileName));
-                      event.dataTransfer.setData("text/plain", t._s(e.fileName));
-                    },
-                    dragEnd: function(event) {
-                      console.log("拖拽结束。。",t._s(e.fileName));
-                    },
-                    drop: function(event) {
-                      event.preventDefault();
-                      const data = event.dataTransfer.getData("text/plain");
-                      console.log("收到拖拽数据。。。",data);
-                      event.target.innerText = data;
-                    }
+//                    dragStart: function(event) {
+//                      console.log("开始拖拽。",t._s(e.fileName));
+//                      event.dataTransfer.setData("text/plain", t._s(e.fileName));
+//                    },
+//                    dragEnd: function(event) {
+//                      console.log("拖拽结束。。",t._s(e.fileName));
+//                    },
+//                    drop: function(event) {
+//                      event.preventDefault();
+//                      const data = event.dataTransfer.getData("text/plain");
+//                      console.log("收到拖拽数据。。。",data);
+//                      event.target.innerText = data;
+//                    }
                 }
             }, [
 
@@ -9920,6 +9922,8 @@ var Rs = Ms,
 
 
             ], 1)
+
+
         })), 1)], 1)], 1)], 1)
     },
     js = [];
