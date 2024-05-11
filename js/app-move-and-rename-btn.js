@@ -9757,17 +9757,7 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName}, style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
-
-            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
-                attrs: {
-                    icon: "",
-                    tag: "a",
-                    href: "javascript:void(0)",
-                        title: "重命名",
-                },
-                on: {
-                    click: function(event) {
-                    var newName = prompt(`输入新文件${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`,event.currentTarget.getAttribute('efilename'));
+                var newName = prompt(`输入新文件${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`,event.currentTarget.getAttribute('efilename'));
                     if (newName !== null && newName != "" && newName != event.currentTarget.getAttribute('efilename')) {
                         newName = newName.replace(/\s+/g, '');
                         var n = new XMLHttpRequest;
@@ -9785,7 +9775,15 @@ var Rs = Ms,
                         n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                     }
-
+            }}}, [n("v-btn", { // TODO (e.isFolder || e.isGoogleFile) ? t._e() :
+                attrs: {
+                    icon: "",
+                    tag: "a",
+                    href: "javascript:void(0)",
+                        title: "重命名",
+                },
+                on: {
+                    click: function(event) {
                     }
                 }
             }, [ n("svg", {
