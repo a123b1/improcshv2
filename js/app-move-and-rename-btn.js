@@ -9665,7 +9665,7 @@ var Rs = Ms,
                     resourceId: e.resourceId,
                     href: fileUrl, //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                     draggable: "true",
-                    ondragstart: "dragStart(event)",
+                    ondragstart: "window.dragStart(event)",
                     dragend: "dragEnd(event)",
                     drop: "drop(event)",
 
@@ -12051,14 +12051,12 @@ P()(ql, {
     VTextField: Er
 });
 
-//export default {
-//function dragStart(event) {
-//    console.log("开始拖拽。");
-//           }
-//}
-export default function dragStart(event) {
+
+function dragStart(event) {
     console.log("开始拖拽。");
 }
+window.dragStart = dragStart;
+
 
 let currentDirId = "null";
 var Jl = {
