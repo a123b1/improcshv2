@@ -9515,7 +9515,12 @@ var Rs = Ms,
                 key: e.path + "-btn",
                 staticClass: "text-none",
                 attrs: {
-                    text: ""
+                    text: "",
+//                    ondragstart: "window.e_dragStart(event)",
+//                    ondragend: "window.e_dragEnd(event)",
+                    ondrop: "window.e_drop(event)",
+                    ondragover: "window.e_allowDrop(event)" ,
+                    ondragenter: "window.e_dragEnter(event)" ,
                 },
                 on: {
                     click: function(n) {
@@ -9685,8 +9690,10 @@ var Rs = Ms,
                dragEnd: function(event) {
                },
                allowDrop: function(event) {
-                  console.log("是否允许拖入。",t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder: ",e.isFolder,"uploadEnabled: ",t.uploadEnabled );
-                  if (e.isFolder && t.uploadEnabled){
+                  const data = event.dataTransfer.getData("text/plain");
+                  console.log("是否允许拖入。",t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder:",e.isFolder,"uploadEnabled:",t.uploadEnabled,
+                  "isMyself:", data==event.currentTarget.getAttribute('resourceId'));
+                  if (e.isFolder && t.uploadEnabled && data!=event.currentTarget.getAttribute('resourceId')){
                       event.preventDefault();
                   }
                },
