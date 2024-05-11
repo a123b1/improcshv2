@@ -1117,9 +1117,9 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 
                       allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
-                  console.log("是否允许拖入。",data,"root", "uploadEnabled:",t.uploadEnabled,);
+                  console.log("是否允许拖入。",data,"root", "uploadEnabled:",window.props.upload,);
                   if (data.length!=3){return;}
-                  if (t.uploadEnabled ){
+                  if (window.props.upload ){
                       event.preventDefault();
                   }
                },
@@ -1130,7 +1130,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain").split("!3!");
                       console.log("收到拖拽数据。",data,);
-                      if (data.length==3 && t.uploadEnabled) {
+                      if (data.length==3 && window.props.upload) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(window.props.title)}” ？`)) {
                                 var n = new XMLHttpRequest;
                                 var r = new URL(t.getFileUrl(""));
