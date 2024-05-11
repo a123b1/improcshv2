@@ -1086,7 +1086,6 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                      e = t.$createElement,
                      n = t._self._c || e;
 
-                console.log("v-toolbar-items first");
                  return n("v-app", [n("v-app-bar", {
                      attrs: {
                          app: "",
@@ -1132,12 +1131,13 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                       console.log("收到拖拽数据。",data,);
                       if (data.length==3 && window.props.upload) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(window.props.title)}” ？`)) {
+                                console.log("this-t",this,t);
                                 var n = new XMLHttpRequest;
-                                var r = new URL(t.getFileUrl(""));
+                                var r = new URL(window.location.href);
                                 var params = new URLSearchParams(r.search);
                                 params.set("move", "true");
                                 params.set("source", data[0]);params.set("to", window.props.default_root_id);
-                                params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                                params.set("rootId", window.props.default_root_id);
                                 r.search = params.toString();
                                 n.onreadystatechange = function() {
                                   if (n.readyState === 4) {
