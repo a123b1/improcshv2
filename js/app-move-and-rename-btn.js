@@ -9688,7 +9688,7 @@ var Rs = Ms,
                   console.log("开始拖拽。",t._s(e.fileName));
                   event.dataTransfer.setData("text/plain", t._s(e.fileName));
                 },
-               
+
             }, [
 
             n("v-list-item-avatar", {
@@ -12055,8 +12055,8 @@ P()(ql, {
 
 function dragStart(event) {
     console.log("开始拖拽。",event,event.originalTarget);
-    console.log("开始。",event.originalTarget.__vue__);
-    event.originalTarget.__vue__.dragStart(event);
+    console.log("开始。",event.originalTarget.__vue__.$vnode.data);
+    event.originalTarget.__vue__.$vnode.data.dragStart(event);
 }
 window.dragStart = dragStart;
 
