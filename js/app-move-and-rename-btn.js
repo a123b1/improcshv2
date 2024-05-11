@@ -9667,8 +9667,10 @@ var Rs = Ms,
                 attrs: {
                     tag: "a",
                     resourceId: e.resourceId,
-                    href: fileUrl //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`,
-                    ondragstart:"dragStart(event)",
+                    href: fileUrl, //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
+                    draggable: "true",
+                    ondragstart: "dragStart(event)",
+
                 },
                 on: {
                     click: function(n) {
