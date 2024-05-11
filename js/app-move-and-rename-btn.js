@@ -9408,11 +9408,7 @@ function Ls(t, e) {
             n > -1 && t.splice(n, 1)
         }
 }
-export default {
-function dragStart(event) {
-    console.log("开始拖拽。");
-           }
-}
+
 function Os(t, e, n) {
     var i = "hash" === n ? "#" + e : e;
     return t ? Po(t + "/" + i) : i
@@ -12054,6 +12050,12 @@ P()(ql, {
     VSwitch: Vl,
     VTextField: Er
 });
+
+export default {
+function dragStart(event) {
+    console.log("开始拖拽。");
+           }
+}
 
 let currentDirId = "null";
 var Jl = {
