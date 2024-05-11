@@ -12053,8 +12053,9 @@ P()(ql, {
 
 
 function dragStart(event) {
-    console.log("开始拖拽。",event,event.currentTarget);
-    event.currentTarget.e_dragStart(event);
+    console.log("开始拖拽。",event,event.originalTarget);
+    console.log("开始。",event.originalTarget.__vue__.e_dragStart);
+    event.originalTarget.__vue__.e_dragStart(event);
 }
 window.dragStart = dragStart;
 
