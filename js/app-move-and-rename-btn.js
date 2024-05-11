@@ -9665,29 +9665,29 @@ var Rs = Ms,
                     resourceId: e.resourceId,
                     href: fileUrl, //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                     draggable: "true",
-                    ondragstart: "window.dragStart(event)",
-                    dragend: "dragEnd(event)",
-                    drop: "drop(event)",e:e, t:t,
+                    ondragstart: "window.e_dragStart(event)",
+                    ondragend: "window.e_dragEnd(event)",
+                    ondrop: "window.e_drop(event)",
                 },
 //                 e:e, t:t,
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
                     },
-                     dragEnd: function(event) {
-                  console.log("拖拽结束。。",t._s(e.fileName));
-                    },
-                    drop: function(event) {
-                      event.preventDefault();
-                      const data = event.dataTransfer.getData("text/plain");
-                      console.log("收到拖拽数据。。。",data);
-                      event.target.innerText = data;
-                    },
                 },
                dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName));
                   event.dataTransfer.setData("text/plain", t._s(e.fileName));
                 },
+               dragEnd: function(event) {
+                  console.log("拖拽结束。。",t._s(e.fileName));
+                    },
+               drop: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain");
+                      console.log("收到拖拽数据。。。",data);
+                      event.target.innerText = data;
+                    },
 
             }, [
 
@@ -12053,15 +12053,23 @@ P()(ql, {
 });
 
 
-function dragStart(event) {
-    console.log("开始拖拽。",event,event.originalTarget);
-    console.log("开始。",event.originalTarget.__vue__.$vnode.data);
+function e_dragStart(event) { // TODO
     event.originalTarget.__vue__.$vnode.data.dragStart(event);
 }
-window.dragStart = dragStart;
+window.e_dragStart = e_dragStart;
 
+function e_dragEnd(event) {
+    event.originalTarget.__vue__.$vnode.data.dragEnd(event);
+}
+window.e_dragEnd = e_dragEnd;
+
+function e_drop(event) {
+    event.originalTarget.__vue__.$vnode.data.drop(event);
+}
+window.e_drop= e_drop;
 
 let currentDirId = "null";
+
 var Jl = {
         "application/epub+zip": "epub",
         "video/mp4": "video",
