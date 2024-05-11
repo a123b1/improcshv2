@@ -9709,8 +9709,8 @@ var Rs = Ms,
 //                      const fileName = event.dataTransfer.customAttr_fileName;
 //                      const isFolder = event.dataTransfer.customAttr_isFolder;
                       console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
-                      if (data.length==3) {
-                           if (confirm(`把文件${(data[2]=="true")?"夹":""}“${data[1]}“移至：“${t._s(e.fileName)}”？`)) {
+                      if (data.length==3 && t.uploadEnabled && e.isFolder) {
+                           if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(e.fileName)}” ？`)) {
                                 var n = new XMLHttpRequest;
                                 var r = new URL(fileUrl);
                                 var params = new URLSearchParams(r.search);
@@ -9723,8 +9723,8 @@ var Rs = Ms,
                                     t.renderPath(t.path, window.props.default_root_id);
                                   }
                                 };
-                                  console.log(r.href);
-//                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+                                 console.log(r.href);
+                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                             }
                       }
