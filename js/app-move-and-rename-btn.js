@@ -9668,6 +9668,19 @@ var Rs = Ms,
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
+                    },
+                    dragStart: function(event) {
+                      console.log("开始拖拽。",t._s(e.fileName));
+                      event.dataTransfer.setData("text/plain", t._s(e.fileName));
+                    },
+                    dragEnd: function(event) {
+                      console.log("拖拽结束。。",t._s(e.fileName));
+                    },
+                    drop: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain");
+                      console.log("收到拖拽数据。。。",data);
+                      event.target.innerText = data;
                     }
                 }
             }, [
@@ -9757,7 +9770,7 @@ var Rs = Ms,
             {   attrs: {fileurl: fileUrl,efilename: e.fileName}, style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
-                var newName = prompt(`输入新文件${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`,event.currentTarget.getAttribute('efilename'));
+                var newName = prompt(`输入新的文件${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`,event.currentTarget.getAttribute('efilename'));
                     if (newName !== null && newName != "" && newName != event.currentTarget.getAttribute('efilename')) {
                         newName = newName.replace(/\s+/g, '');
                         var n = new XMLHttpRequest;
