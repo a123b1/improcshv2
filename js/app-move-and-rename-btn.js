@@ -1085,6 +1085,8 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                  var t = this,
                      e = t.$createElement,
                      n = t._self._c || e;
+                 
+                console.log("v-toolbar-items first");
                  return n("v-app", [n("v-app-bar", {
                      attrs: {
                          app: "",
@@ -9509,9 +9511,11 @@ var Rs = Ms,
                 to: "navbar"
             }
         }, [n("v-toolbar-items", [t._l(t.pathSegments, (function(e) {
+            console.log("v-toolbar-items",e);
             return [n("v-icon", {
                 key: e.path + "-icon"
-            }, [t._v("mdi-menu-right")]), n("v-btn", {
+            }, [t._v("mdi-menu-right")]),
+            n("v-btn", {
                 key: e.path + "-btn",
                 staticClass: "text-none",
                 attrs: {
@@ -9521,7 +9525,7 @@ var Rs = Ms,
                     ondrop: "window.e_drop(event)",
                     ondragover: "window.e_allowDrop(event)" ,
                     ondragenter: "window.e_dragEnter(event)" ,
-                    resourceId: currentDirId,
+                    resourceId: t._s(e.currentDirId),
                 },
                 on: {
                     click: function(n) {
@@ -12232,9 +12236,11 @@ var Jl = {
                 return "/" + this.$route.params.path
             },
             pathSegments: function() {
+                console.log("pathSegments");
                 for (var t = this.path.split("/").filter(Boolean).map(decodeURIComponent), e = [], n = 0; n < t.length; n++) e.push({
                     name: t[n],
-                    path: "/" + El.a.join.apply(El.a, A(t.slice(0, n + 1))) + "/"
+                    path: "/" + El.a.join.apply(El.a, A(t.slice(0, n + 1))) + "/",
+                    currentDirId:currentDirId,
                 });
                 return e
             },
