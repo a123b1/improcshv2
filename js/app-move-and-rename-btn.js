@@ -1094,7 +1094,49 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                          dark: ""
                      }
                  }, [n("v-toolbar-title", {
-                     staticClass: "headline pointer mr-3 hidden-sm-and-down"
+                     staticClass: "headline pointer mr-3 hidden-sm-and-down",
+
+                       attrs: {
+                    text: "",
+                    ondrop: "window.e_drop(event)",
+                    ondragover: "window.e_allowDrop(event)" ,
+                    ondragenter: "window.e_dragEnter(event)" ,
+                },
+                   allowDrop: function(event) {
+                  const data = event.dataTransfer.getData("text/plain").split("!3!");
+                  console.log("是否允许拖入。",data,"root", "uploadEnabled:",t.uploadEnabled,);
+                  if (data.length!=3){return;}
+                  if (t.uploadEnabled ){
+                      event.preventDefault();
+                  }
+               },
+               dragEnter: function(event) {
+                      event.preventDefault();
+               },
+               drop: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain").split("!3!");
+                      console.log("收到拖拽数据。",data,);
+                      if (data.length==3 && t.uploadEnabled) {
+                           if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(window.props.title)}” ？`)) {
+                                var n = new XMLHttpRequest;
+                                var r = new URL(t.getFileUrl(""));
+                                var params = new URLSearchParams(r.search);
+                                params.set("move", "true");
+                                params.set("source", data[0]);params.set("to", window.props.default_root_id);
+                                params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                                r.search = params.toString();
+                                n.onreadystatechange = function() {
+                                  if (n.readyState === 4) {
+                                    t.renderPath(t.path, window.props.default_root_id);
+                                  }
+                                };
+                                 console.log(r.href);
+                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
+                            }
+                      }
+               },
                  }, [n("router-link", {
                      attrs: {
                          to: {
@@ -9511,7 +9553,7 @@ var Rs = Ms,
                 to: "navbar"
             }
         }, [n("v-toolbar-items", [t._l(t.pathSegments, (function(e) {
-            console.log("v-toolbar-items",e);
+            console.log("v-toolbar-items second",e);
             return [n("v-icon", {
                 key: e.path + "-icon"
             }, [t._v("mdi-menu-right")]),
@@ -9551,7 +9593,7 @@ var Rs = Ms,
                                 var r = new URL(t.getFileUrl(t.path));
                                 var params = new URLSearchParams(r.search);
                                 params.set("move", "true");
-                                params.set("source", data[0]);params.set("to", event.currentTarget.getAttribute('resourceId'));
+                                params.set("source", data[0]);params.set("to", e.path);
                                 params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
                                 r.search = params.toString();
                                 n.onreadystatechange = function() {
@@ -12233,7 +12275,6 @@ var Jl = {
                 return "/" + this.$route.params.path
             },
             pathSegments: function() {
-                console.log("pathSegments");
                 for (var t = this.path.split("/").filter(Boolean).map(decodeURIComponent), e = [], n = 0; n < t.length; n++) e.push({
                     name: t[n],
                     path: "/" + El.a.join.apply(El.a, A(t.slice(0, n + 1))) + "/",
