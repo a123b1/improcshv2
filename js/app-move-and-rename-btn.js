@@ -12051,10 +12051,13 @@ P()(ql, {
     VTextField: Er
 });
 
-export default {
-function dragStart(event) {
+//export default {
+//function dragStart(event) {
+//    console.log("开始拖拽。");
+//           }
+//}
+export default function dragStart(event) {
     console.log("开始拖拽。");
-           }
 }
 
 let currentDirId = "null";
