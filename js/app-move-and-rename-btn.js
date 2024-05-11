@@ -9684,18 +9684,19 @@ var Rs = Ms,
                 },
                dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName),event.originalTarget.getAttribute('resourceId'));
-                  event.dataTransfer.setData("text/plain", event.originalTarget.getAttribute('resourceId'));
-                  event.dataTransfer.customAttr_fileName = t._s(e.fileName);
-                  event.dataTransfer.customAttr_isFolder = e.isFolder;
+                  let _data = [event.originalTarget.getAttribute('resourceId'),t._s(e.fileName), e.isFolder];
+                  event.dataTransfer.setData("text/plain", _data.join("!3!"));
+//                  event.dataTransfer.customAttr_fileName = t._s(e.fileName);
+//                  event.dataTransfer.customAttr_isFolder = e.isFolder;
                   event.dataTransfer.effectAllowed = 'move';
                 },
                dragEnd: function(event) {
                },
                allowDrop: function(event) {
-                  const data = event.dataTransfer.getData("text/plain");
-                  console.log("是否允许拖入。",t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder:",e.isFolder,"uploadEnabled:",t.uploadEnabled,
-                  "isMyself:", data==event.currentTarget.getAttribute('resourceId'));
-                  if (e.isFolder && t.uploadEnabled && data!=event.currentTarget.getAttribute('resourceId')){
+                  const data = event.dataTransfer.getData("text/plain").split("!3!");
+                  console.log("是否允许拖入。",data,t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder:",e.isFolder,"uploadEnabled:",t.uploadEnabled,);
+                  if (data.length!=3){return;}
+                  if (e.isFolder && t.uploadEnabled && data[0]!=event.currentTarget.getAttribute('resourceId')){
                       event.preventDefault();
                   }
                },
@@ -9704,21 +9705,27 @@ var Rs = Ms,
                },
                drop: function(event) {
                       event.preventDefault();
-                      const data = event.dataTransfer.getData("text/plain");
-                      const fileName = event.dataTransfer.customAttr_fileName;
-                      const isFolder = event.dataTransfer.customAttr_isFolder;
-                      console.log("收到拖拽数据。",fileName,"isFolder:",isFolder,data,event.currentTarget.getAttribute('resourceId'),);
-                      if (typeof data === "string" && data.length > 10 && fileName && isFolder) {
-                           if (confirm(`把文件${(isFolder)?"夹":""}“${fileName}“移至：“${t._s(e.fileName)}”？`)) {
+                      const data = event.dataTransfer.getData("text/plain").split("!3!");
+//                      const fileName = event.dataTransfer.customAttr_fileName;
+//                      const isFolder = event.dataTransfer.customAttr_isFolder;
+                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
+                      if (data.length==3) {
+                           if (confirm(`把文件${(data[2]=="true")?"夹":""}“${data[1]}“移至：“${t._s(e.fileName)}”？`)) {
                                 var n = new XMLHttpRequest;
                                 var r = new URL(fileUrl);
+                                var params = new URLSearchParams(r.search);
+                                params.set("move", "true");
+                                params.set("source", data[0]);params.set("to", event.currentTarget.getAttribute('resourceId'));
+                                params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                                r.search = params.toString();
                                 n.onreadystatechange = function() {
                                   if (n.readyState === 4) {
-                                    t.renderPath(t.path, window.props.default_root_id)
+                                    t.renderPath(t.path, window.props.default_root_id);
                                   }
                                 };
-//                                n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
-            
+                                  console.log(r.href);
+//                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
                             }
                       }
                },
