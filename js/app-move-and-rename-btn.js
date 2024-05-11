@@ -1141,7 +1141,8 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                                 r.search = params.toString();
                                 n.onreadystatechange = function() {
                                   if (n.readyState === 4) {
-                                    t.renderPath(t.path, window.props.default_root_id);
+//                                    t.renderPath(t.path, window.props.default_root_id);
+                                    renderPath_public("/", window.props.default_root_id);
                                   }
                                 };
                                  console.log(r.href);
@@ -12208,6 +12209,7 @@ function e_drop(event) {
 window.e_drop= e_drop;
 
 let currentDirId = "null";
+let renderPath_public = null;
 
 var Jl = {
         "application/epub+zip": "epub",
@@ -12325,6 +12327,7 @@ var Jl = {
                 return e && (n += "?rootId=" + e), n
             },
             renderPath: function(t, e) {
+                renderPath_public = renderPath;
                 var n = this;
                 console.log("renderPath",t, e);
                 return c(regeneratorRuntime.mark((function i() {
