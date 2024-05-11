@@ -9669,6 +9669,7 @@ var Rs = Ms,
                     ondragend: "window.e_dragEnd(event)",
                     ondrop: "window.e_drop(event)",
                     ondragover: "window.e_allowDrop(event)" ,
+                    ondragenter: "window.e_dragEnter(event)" ,
                 },
 //                 e:e, t:t,
                 on: {
@@ -9679,6 +9680,7 @@ var Rs = Ms,
                dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName));
                   event.dataTransfer.setData("text/plain", t._s(e.fileName));
+                  event.dataTransfer.effectAllowed = 'move';
                 },
                dragEnd: function(event) {
                   console.log("拖拽结束。。",t._s(e.fileName));
@@ -9689,12 +9691,16 @@ var Rs = Ms,
                       event.preventDefault();
                   }
                },
-               drop: function(event) {
+               dragEnter: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain");
+                      console.log("拖拽数据进入。。。",data);
+               },
+                drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain");
                       console.log("收到拖拽数据。。。",data);
                },
-
             }, [
 
             n("v-list-item-avatar", {
@@ -12070,12 +12076,17 @@ function e_dragEnd(event) {
 window.e_dragEnd = e_dragEnd;
 
 function e_allowDrop(event) {
-   event.originalTarget.__vue__.$vnode.data.allowDrop(event);
+   event.currentTarget.__vue__.$vnode.data.allowDrop(event);
 }
 window.e_allowDrop= e_allowDrop;
 
+function e_dragEnter(event) {
+    event.currentTarget.__vue__.$vnode.data.dragEnter(event);
+}
+window.e_dragEnter= e_dragEnter;
+
 function e_drop(event) {
-    event.originalTarget.__vue__.$vnode.data.drop(event);
+    event.currentTarget.__vue__.$vnode.data.drop(event);
 }
 window.e_drop= e_drop;
 
