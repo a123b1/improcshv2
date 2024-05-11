@@ -9668,26 +9668,26 @@ var Rs = Ms,
                     ondragstart: "window.dragStart(event)",
                     dragend: "dragEnd(event)",
                     drop: "drop(event)",
-
                 },
+                // e:e, t:t,
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
                     },
-//                    dragStart: function(event) {
-//                      console.log("开始拖拽。",t._s(e.fileName));
-//                      event.dataTransfer.setData("text/plain", t._s(e.fileName));
-//                    },
-//                    dragEnd: function(event) {
-//                      console.log("拖拽结束。。",t._s(e.fileName));
-//                    },
-//                    drop: function(event) {
-//                      event.preventDefault();
-//                      const data = event.dataTransfer.getData("text/plain");
-//                      console.log("收到拖拽数据。。。",data);
-//                      event.target.innerText = data;
-//                    }
-                }
+                },
+               e_dragStart: function(event) {
+                  console.log("开始拖拽。",t._s(e.fileName));
+                  event.dataTransfer.setData("text/plain", t._s(e.fileName));
+                },
+                e_dragEnd: function(event) {
+                  console.log("拖拽结束。。",t._s(e.fileName));
+                },
+                e_drop: function(event) {
+                  event.preventDefault();
+                  const data = event.dataTransfer.getData("text/plain");
+                  console.log("收到拖拽数据。。。",data);
+                  event.target.innerText = data;
+                },
             }, [
 
             n("v-list-item-avatar", {
@@ -12053,7 +12053,8 @@ P()(ql, {
 
 
 function dragStart(event) {
-    console.log("开始拖拽。");
+    console.log("开始拖拽。",event,event.currentTarget);
+    event.currentTarget.e_dragStart(event);
 }
 window.dragStart = dragStart;
 
