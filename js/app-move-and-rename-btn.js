@@ -9678,28 +9678,25 @@ var Rs = Ms,
                     },
                 },
                dragStart: function(event) {
-                  console.log("开始拖拽。",t._s(e.fileName));
-                  event.dataTransfer.setData("text/plain", t._s(e.fileName));
+                  console.log("开始拖拽。",t._s(e.fileName),event.originalTarget.getAttribute('resourceId'));
+                  event.dataTransfer.setData("text/plain", event.originalTarget.getAttribute('resourceId'));
                   event.dataTransfer.effectAllowed = 'move';
                 },
                dragEnd: function(event) {
-                  console.log("拖拽结束。。",t._s(e.fileName));
                },
                allowDrop: function(event) {
-                  console.log("是否允许拖入。",t._s(e.fileName), "isFolder: ",e.isFolder );
-                  if (e.isFolder){
+                  console.log("是否允许拖入。",t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder: ",e.isFolder,"uploadEnabled: ",t.uploadEnabled );
+                  if (e.isFolder && t.uploadEnabled){
                       event.preventDefault();
                   }
                },
                dragEnter: function(event) {
                       event.preventDefault();
-                      const data = event.dataTransfer.getData("text/plain");
-                      console.log("拖拽数据进入。。。",data);
                },
                 drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain");
-                      console.log("收到拖拽数据。。。",data);
+                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
                },
             }, [
 
