@@ -9668,6 +9668,7 @@ var Rs = Ms,
                     ondragstart: "window.e_dragStart(event)",
                     ondragend: "window.e_dragEnd(event)",
                     ondrop: "window.e_drop(event)",
+                    ondragover="window.e_allowDrop(event)" ,
                 },
 //                 e:e, t:t,
                 on: {
@@ -9677,14 +9678,14 @@ var Rs = Ms,
                 },
                dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName));
-                  event.dataTransfer.setData("text/plain", t._s(e.fileName));
+                  event.dataTransfer.setData("text", t._s(e.fileName));
                 },
                dragEnd: function(event) {
                   console.log("拖拽结束。。",t._s(e.fileName));
                     },
                drop: function(event) {
                       event.preventDefault();
-                      const data = event.dataTransfer.getData("text/plain");
+                      const data = event.dataTransfer.getData("text");
                       console.log("收到拖拽数据。。。",data);
                       event.target.innerText = data;
                     },
@@ -12062,6 +12063,11 @@ function e_dragEnd(event) {
     event.originalTarget.__vue__.$vnode.data.dragEnd(event);
 }
 window.e_dragEnd = e_dragEnd;
+
+function e_allowDrop(event) {
+  event.preventDefault();
+}
+window.e_allowDrop= e_allowDrop;
 
 function e_drop(event) {
     event.originalTarget.__vue__.$vnode.data.drop(event);
