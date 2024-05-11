@@ -1098,11 +1098,24 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 
                        attrs: {
                     text: "",
-                    ondrop: "window.e_drop(event)",
+
+                },
+
+                 }, [n("router-link", {
+                     attrs: {
+                         to: {
+                             path: "/",
+                             query: {
+                                 rootId: t.$route.query.rootId
+                             }
+                         },
+                         tag: "span",
+                            ondrop: "window.e_drop(event)",
                     ondragover: "window.e_allowDrop(event)" ,
                     ondragenter: "window.e_dragEnter(event)" ,
-                },
-                   allowDrop: function(event) {
+                     },
+
+                      allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
                   console.log("是否允许拖入。",data,"root", "uploadEnabled:",t.uploadEnabled,);
                   if (data.length!=3){return;}
@@ -1137,16 +1150,10 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                             }
                       }
                },
-                 }, [n("router-link", {
-                     attrs: {
-                         to: {
-                             path: "/",
-                             query: {
-                                 rootId: t.$route.query.rootId
-                             }
-                         },
-                         tag: "span"
-                     }
+
+
+
+
                  }, [t._v(t._s(t.title))])], 1), n("v-toolbar-items", [t.drives.length ? n("v-menu", {
                      attrs: {
                          "offset-y": ""
