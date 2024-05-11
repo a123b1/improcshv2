@@ -9521,12 +9521,51 @@ var Rs = Ms,
                     ondrop: "window.e_drop(event)",
                     ondragover: "window.e_allowDrop(event)" ,
                     ondragenter: "window.e_dragEnter(event)" ,
+                    resourceId: currentDirId,
                 },
                 on: {
                     click: function(n) {
                         return t.goPath(e.path,0,0) // TODO
                     }
-                }
+                },
+
+                allowDrop: function(event) {
+                  const data = event.dataTransfer.getData("text/plain").split("!3!");
+                  console.log("是否允许拖入。",data,t._s(e.name),event.currentTarget.getAttribute('resourceId'), "uploadEnabled:",t.uploadEnabled,);
+                  if (data.length!=3){return;}
+                  if (t.uploadEnabled && data[0]!=event.currentTarget.getAttribute('resourceId')){
+                      event.preventDefault();
+                  }
+               },
+               dragEnter: function(event) {
+                      event.preventDefault();
+               },
+               drop: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain").split("!3!");
+                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
+                      if (data.length==3 && t.uploadEnabled) {
+                           if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(e.name)}” ？`)) {
+                                var n = new XMLHttpRequest;
+                                var r = new URL(t.getFileUrl(t.path));
+                                var params = new URLSearchParams(r.search);
+                                params.set("move", "true");
+                                params.set("source", data[0]);params.set("to", event.currentTarget.getAttribute('resourceId'));
+                                params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                                r.search = params.toString();
+                                n.onreadystatechange = function() {
+                                  if (n.readyState === 4) {
+                                    t.renderPath(t.path, window.props.default_root_id);
+                                  }
+                                };
+                                 console.log(r.href);
+//                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
+                            }
+                      }
+               },
+
+
             }, [t._v(t._s(e.name))])]
         }))], 2)], 1), n("FileUploadDialog", {
             attrs: {
