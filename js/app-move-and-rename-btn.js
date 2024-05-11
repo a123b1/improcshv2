@@ -9588,7 +9588,7 @@ var Rs = Ms,
             },
             on: {
                 click: function(e) {
-                    var folderName = prompt("文件夹名称");
+                    var folderName = prompt("输入文件夹名称");
                     if (folderName !== null && folderName != "") {
                         folderName = folderName.replace(/\s+/g, '');
                         var n = new XMLHttpRequest;
@@ -9767,14 +9767,13 @@ var Rs = Ms,
                 },
                 on: {
                     click: function(event) {
-
-                    var folderName = prompt(`新${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`);
-                    if (folderName !== null && folderName != "") {
-                        folderName = folderName.replace(/\s+/g, '');
+                    var newName = prompt(`输入新文件${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`,event.currentTarget.getAttribute('efilename'));
+                    if (newName !== null && newName != "" && newName != event.currentTarget.getAttribute('efilename')) {
+                        newName = newName.replace(/\s+/g, '');
                         var n = new XMLHttpRequest;
-                        var r = new URL(t.getFileUrl(t.path+folderName));
+                        var r = new URL(event.currentTarget.getAttribute('fileurl'));
                         var params = new URLSearchParams(r.search);
-                        params.set("rename", folderName);
+                        params.set("rename", newName);
                         params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
                         r.search = params.toString();
                         n.onreadystatechange = function() {
