@@ -1085,7 +1085,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                  var t = this,
                      e = t.$createElement,
                      n = t._self._c || e;
-                 
+
                 console.log("v-toolbar-items first");
                  return n("v-app", [n("v-app-bar", {
                      attrs: {
@@ -9520,12 +9520,9 @@ var Rs = Ms,
                 staticClass: "text-none",
                 attrs: {
                     text: "",
-//                    ondragstart: "window.e_dragStart(event)",
-//                    ondragend: "window.e_dragEnd(event)",
                     ondrop: "window.e_drop(event)",
                     ondragover: "window.e_allowDrop(event)" ,
                     ondragenter: "window.e_dragEnter(event)" ,
-                    resourceId: t._s(e.currentDirId),
                 },
                 on: {
                     click: function(n) {
@@ -9535,9 +9532,9 @@ var Rs = Ms,
 
                 allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
-                  console.log("是否允许拖入。",data,t._s(e.name),event.currentTarget.getAttribute('resourceId'), "uploadEnabled:",t.uploadEnabled,);
+                  console.log("是否允许拖入。",data,t._s(e.name),e.path, "uploadEnabled:",t.uploadEnabled,);
                   if (data.length!=3){return;}
-                  if (t.uploadEnabled && data[0]!=event.currentTarget.getAttribute('resourceId')){
+                  if (t.uploadEnabled && data[0]!=e.path){
                       event.preventDefault();
                   }
                },
@@ -9547,7 +9544,7 @@ var Rs = Ms,
                drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain").split("!3!");
-                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
+                      console.log("收到拖拽数据。",data,e.path,);
                       if (data.length==3 && t.uploadEnabled) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(e.name)}” ？`)) {
                                 var n = new XMLHttpRequest;
@@ -9563,7 +9560,7 @@ var Rs = Ms,
                                   }
                                 };
                                  console.log(r.href);
-//                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+                                n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
 
                             }
                       }
@@ -12240,7 +12237,6 @@ var Jl = {
                 for (var t = this.path.split("/").filter(Boolean).map(decodeURIComponent), e = [], n = 0; n < t.length; n++) e.push({
                     name: t[n],
                     path: "/" + El.a.join.apply(El.a, A(t.slice(0, n + 1))) + "/",
-                    currentDirId:currentDirId,
                 });
                 return e
             },
