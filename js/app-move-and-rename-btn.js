@@ -9685,6 +9685,8 @@ var Rs = Ms,
                dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName),event.originalTarget.getAttribute('resourceId'));
                   event.dataTransfer.setData("text/plain", event.originalTarget.getAttribute('resourceId'));
+                  event.dataTransfer.customAttr_fileName = t._s(e.fileName);
+                  event.dataTransfer.customAttr_isFolder = e.isFolder;
                   event.dataTransfer.effectAllowed = 'move';
                 },
                dragEnd: function(event) {
@@ -9700,10 +9702,25 @@ var Rs = Ms,
                dragEnter: function(event) {
                       event.preventDefault();
                },
-                drop: function(event) {
+               drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain");
-                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
+                      const fileName = event.dataTransfer.customAttr_fileName;
+                      const isFolder = event.dataTransfer.customAttr_isFolder;
+                      console.log("收到拖拽数据。",fileName,"isFolder:",isFolder,data,event.currentTarget.getAttribute('resourceId'),);
+                      if (typeof data === "string" && data.length > 10 && fileName && isFolder) {
+                           if (confirm(`把文件${(isFolder)?"夹":""}“${fileName}“移至：“${t._s(e.fileName)}”？`)) {
+                                var n = new XMLHttpRequest;
+                                var r = new URL(fileUrl);
+                                n.onreadystatechange = function() {
+                                  if (n.readyState === 4) {
+                                    t.renderPath(t.path, window.props.default_root_id)
+                                  }
+                                };
+//                                n.open("DELETE", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+            
+                            }
+                      }
                },
             }, [
 
