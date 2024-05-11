@@ -1116,7 +1116,7 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
 
                       allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
-                  console.log("是否允许拖入。",data,"root", "uploadEnabled:",window.props.upload,);
+                  //console.log("是否允许拖入。",data,"root", "uploadEnabled:",window.props.upload,);
                   if (data.length!=3){return;}
                   if (window.props.upload ){
                       event.preventDefault();
@@ -1128,10 +1128,10 @@ var n=Object.freeze({});function i(t){return void 0===t||null===t}function r(t){
                drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain").split("!3!");
-                      console.log("收到拖拽数据。",data,);
+                      //console.log("收到拖拽数据。",data,);
                       if (data.length==3 && window.props.upload) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(window.props.title)}” ？`)) {
-                                console.log("this-t",this,t);
+                                //console.log("this-t",this,t);
                                 var n = new XMLHttpRequest;
                                 var r = new URL(window.location.href);
                                 var params = new URLSearchParams(r.search);
@@ -9561,11 +9561,10 @@ var Rs = Ms,
                 to: "navbar"
             }
         }, [n("v-toolbar-items", [t._l(t.pathSegments, (function(e) {
-            console.log("v-toolbar-items second",e);
+            //console.log("v-toolbar-items second",e);
             return [n("v-icon", {
                 key: e.path + "-icon"
-            }, [t._v("mdi-menu-right")]),
-            n("v-btn", {
+            }, [t._v("mdi-menu-right")]), n("v-btn", {
                 key: e.path + "-btn",
                 staticClass: "text-none",
                 attrs: {
@@ -9582,7 +9581,7 @@ var Rs = Ms,
 
                 allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
-                  console.log("是否允许拖入。",data,t._s(e.name),e.path, "uploadEnabled:",t.uploadEnabled,);
+                  //console.log("是否允许拖入。",data,t._s(e.name),e.path, "uploadEnabled:",t.uploadEnabled,);
                   if (data.length!=3){return;}
                   if (t.uploadEnabled && data[0]!=e.path){
                       event.preventDefault();
@@ -9594,7 +9593,7 @@ var Rs = Ms,
                drop: function(event) {
                       event.preventDefault();
                       const data = event.dataTransfer.getData("text/plain").split("!3!");
-                      console.log("收到拖拽数据。",data,e.path,);
+                      //console.log("收到拖拽数据。",data,e.path,);
                       if (data.length==3 && t.uploadEnabled) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(e.name)}” ？`)) {
                                 var n = new XMLHttpRequest;
@@ -9773,7 +9772,7 @@ var Rs = Ms,
                     },
                 },
                dragStart: function(event) {
-                  console.log("开始拖拽。",t._s(e.fileName),event.originalTarget.getAttribute('resourceId'));
+                  //console.log("开始拖拽。",t._s(e.fileName),event.originalTarget.getAttribute('resourceId'));
                   let _data = [event.originalTarget.getAttribute('resourceId'),t._s(e.fileName), e.isFolder];
                   event.dataTransfer.setData("text/plain", _data.join("!3!"));
 //                  event.dataTransfer.customAttr_fileName = t._s(e.fileName);
@@ -9784,7 +9783,7 @@ var Rs = Ms,
                },
                allowDrop: function(event) {
                   const data = event.dataTransfer.getData("text/plain").split("!3!");
-                  console.log("是否允许拖入。",data,t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder:",e.isFolder,"uploadEnabled:",t.uploadEnabled,);
+                  //console.log("是否允许拖入。",data,t._s(e.fileName),event.currentTarget.getAttribute('resourceId'), "isFolder:",e.isFolder,"uploadEnabled:",t.uploadEnabled,);
                   if (data.length!=3){return;}
                   if (e.isFolder && t.uploadEnabled && data[0]!=event.currentTarget.getAttribute('resourceId')){
                       event.preventDefault();
@@ -9798,7 +9797,7 @@ var Rs = Ms,
                       const data = event.dataTransfer.getData("text/plain").split("!3!");
 //                      const fileName = event.dataTransfer.customAttr_fileName;
 //                      const isFolder = event.dataTransfer.customAttr_isFolder;
-                      console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
+                      //console.log("收到拖拽数据。",data,event.currentTarget.getAttribute('resourceId'),);
                       if (data.length==3 && t.uploadEnabled && e.isFolder) {
                            if (confirm(`把文件${(data[2]=="true")?"夹":""} “${data[1]}“ 移至 “${t._s(e.fileName)}” ？`)) {
                                 var n = new XMLHttpRequest;
