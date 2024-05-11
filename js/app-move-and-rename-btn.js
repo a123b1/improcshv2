@@ -9667,27 +9667,28 @@ var Rs = Ms,
                     draggable: "true",
                     ondragstart: "window.dragStart(event)",
                     dragend: "dragEnd(event)",
-                    drop: "drop(event)",
+                    drop: "drop(event)",e:e, t:t,
                 },
-                // e:e, t:t,
+//                 e:e, t:t,
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
                     },
+                     dragEnd: function(event) {
+                  console.log("拖拽结束。。",t._s(e.fileName));
+                    },
+                    drop: function(event) {
+                      event.preventDefault();
+                      const data = event.dataTransfer.getData("text/plain");
+                      console.log("收到拖拽数据。。。",data);
+                      event.target.innerText = data;
+                    },
                 },
-               e_dragStart: function(event) {
+               dragStart: function(event) {
                   console.log("开始拖拽。",t._s(e.fileName));
                   event.dataTransfer.setData("text/plain", t._s(e.fileName));
                 },
-                e_dragEnd: function(event) {
-                  console.log("拖拽结束。。",t._s(e.fileName));
-                },
-                e_drop: function(event) {
-                  event.preventDefault();
-                  const data = event.dataTransfer.getData("text/plain");
-                  console.log("收到拖拽数据。。。",data);
-                  event.target.innerText = data;
-                },
+               
             }, [
 
             n("v-list-item-avatar", {
@@ -12054,8 +12055,8 @@ P()(ql, {
 
 function dragStart(event) {
     console.log("开始拖拽。",event,event.originalTarget);
-    console.log("开始。",event.originalTarget.__vue__.e_dragStart);
-    event.originalTarget.__vue__.e_dragStart(event);
+    console.log("开始。",event.originalTarget.__vue__);
+    event.originalTarget.__vue__.dragStart(event);
 }
 window.dragStart = dragStart;
 
