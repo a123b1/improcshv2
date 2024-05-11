@@ -9669,7 +9669,7 @@ var Rs = Ms,
                     resourceId: e.resourceId,
                     href: fileUrl //t.getFileUrl(e.resourcePath) + `?rootId=${window.props.default_root_id}`
                 },
-                ondragstart="dragStart(event)",
+                ondragstart:"dragStart(event)",
                 on: {
                     click: function(n) {
                         return n.preventDefault(), t.goPath(e.resourcePath, e.opener,e) // TODO
