@@ -9766,7 +9766,27 @@ var Rs = Ms,
                         title: "重命名",
                 },
                 on: {
-                    click: function(t) {
+                    click: function(event) {
+
+                    var folderName = prompt(`新${(e.isFolder || e.isGoogleFile)?"夹":""}名称：`);
+                    if (folderName !== null && folderName != "") {
+                        folderName = folderName.replace(/\s+/g, '');
+                        var n = new XMLHttpRequest;
+                        var r = new URL(t.getFileUrl(t.path+folderName));
+                        var params = new URLSearchParams(r.search);
+                        params.set("rename", folderName);
+                        params.set("rootId", t.$route.query.rootId || window.props.default_root_id);
+                        r.search = params.toString();
+                        n.onreadystatechange = function() {
+                          if (n.readyState === 4) {
+                            t.renderPath(t.path, window.props.default_root_id)
+                          }
+                        };
+                        console.log(r.href);
+                        n.open("PUT", r.href), localStorage.token && n.setRequestHeader("Authorization", "Basic " + localStorage.token), n.send(i)
+
+                    }
+
                     }
                 }
             }, [ n("svg", {
