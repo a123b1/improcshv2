@@ -9704,20 +9704,20 @@ var Rs = Ms,
             }
         }),
 
-    n("v-btn", {
-            attrs: {
-                color: "primary"
-            },
-            style: { marginLeft: '8px' },
-            domProps: {
-                textContent: t._s("新建文档") // TODO
-            },
-            on: {
-                click: function(e) {
-
-                }
-            }
-        }),
+//    n("v-btn", {
+//            attrs: {
+//                color: "primary"
+//            },
+//            style: { marginLeft: '8px' },
+//            domProps: {
+//                textContent: t._s("新建文档") // TODO
+//            },
+//            on: {
+//                click: function(e) {
+//
+//                }
+//            }
+//        }),
 
         ], 1)], 1) : t._e(),
         n("v-row", {
@@ -9868,7 +9868,7 @@ var Rs = Ms,
 
             ], 1)], 1),
 
-            !t.uploadEnabled || e.isFolder || e.isGoogleFile||!e.fileName.endsWith(".txt") ? t._e() : n("v-list-item-action",
+            true || !t.uploadEnabled || e.isFolder || e.isGoogleFile||!e.fileName.endsWith(".txt") ? t._e() : n("v-list-item-action",
             {   attrs: {fileurl: fileUrl,efilename: e.fileName}, style: { marginLeft: '8px' },
                 on: {click: function(event) {
                 event.stopPropagation();event.preventDefault();
