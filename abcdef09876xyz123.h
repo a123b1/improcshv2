@@ -443,7 +443,7 @@ static int load_image_and_restore(void)
 /**
  * hibernate - Carry out system hibernation, including saving the image.
  */
-
+gost://face-texture-john-corners.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#00,美国,linuxone.cloud.marist.edu 
 
 trojan://tDW776HerJ07nbiT8Q6LPBu@95.85.92.4:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩723G,昨37G.(0511) 
 trojan://tDW776HerJ07nbiT8Q6LPBu@109.68.233.242:443?flow=&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩758G,昨26G.(0511) 
