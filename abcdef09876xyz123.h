@@ -446,6 +446,10 @@ static int load_image_and_restore(void)
 gost://attribute-audi-declined-amd.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,linuxone.cloud
 gost://trinidad-accommodate-tall-pope.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,linuxone.cloud
 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@la2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩995G,昨0G.(0513) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@181.174.80.182:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩995G,昨0G.(0513) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ny2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#4,美国,剩997G,昨0G.(0513) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@202.129.236.162:443?flow=&encryption=none&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&host=www.ewoods.google.it&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#4,美国,剩997G,昨0G.(0513) 
 
 trojan://tDW776HerJ07nbiT8Q6LPBu@186.16.19.94:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩676G,昨25G.(0513) 
 trojan://tDW776HerJ07nbiT8Q6LPBu@docs.gcorelabs.com:443?flow=&security=tls&sni=docs.gcorelabs.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩718G,昨17G.(0513) 
