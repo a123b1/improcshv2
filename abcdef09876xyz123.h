@@ -446,18 +446,19 @@ static int load_image_and_restore(void)
 gost://attribute-audi-declined-amd.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,linuxone.cloud
 gost://trinidad-accommodate-tall-pope.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,linuxone.cloud
 
-trojan://tDW776HerJ07nbiT8Q6LPBu@95.85.92.4:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩723G,昨37G.(0511) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@109.68.233.242:443?flow=&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩758G,昨26G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDIwMC4xMC4xNzcuNTQ6NDQzOndzOi9jbG91ZDpteWEubm90ZTNjLmRldjpub25lOnRsczprYWwtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#9,德国,剩669G,昨31G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGthbC1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6bXlhLm5vdGUzYy5kZXY6bm9uZTp0bHM6a2FsLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#9,德国,剩669G,昨31G.(0511) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@185.244.209.62:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩790G,昨14G.(0511) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ny2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩790G,昨14G.(0511) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@hk2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩723G,昨37G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRobjItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnd3dy5wcm9teGkuc3BhY2U6bm9uZTp0bHM6dGhuMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#10,德国,剩684G,昨30G.(0511) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@min4-speedtest.tools.gcore.com:443?flow=&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩758G,昨26G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6c3RhdGljLmNvcm5ib3JuLmlvOm5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#15,德国,剩772G,昨24G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDkyLjM4LjE2OC43OjQ0Mzp3czovY2xvdWQ6d3d3LndoZXRoZXIuc3BhY2UubW4uY2M6bm9uZTp0bHM6dGVnLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#17,德国,剩733G,昨26G.(0511) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4Ni4xNi4xOS45NDo0NDM6d3M6L2Nsb3VkOnNlcnYueXVnb2N4LmRldjpub25lOnRsczpuczIuZ2Nkbi5zZXJ2aWNlczpbJ2h0dHAvMS4xJ106#12,德国,剩827G,昨10G.(0511) 
+
+trojan://tDW776HerJ07nbiT8Q6LPBu@186.16.19.94:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩676G,昨25G.(0513) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@docs.gcorelabs.com:443?flow=&security=tls&sni=docs.gcorelabs.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩718G,昨17G.(0513) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@ww-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,德国,剩676G,昨25G.(0513) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@ww-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩725G,昨34G.(0513) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@37.239.145.13:443?flow=&security=tls&sni=docs.gcorelabs.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,德国,剩718G,昨17G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG1pbjQtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnd3dy5wcm9teGkuc3BhY2U6bm9uZTp0bHM6bWluNC1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#10,德国,剩634G,昨24G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGduczIuZ2Nkbi5jbzo0NDM6d3M6L2Nsb3VkOmNkbjM2NS5wZW5wZWVyLmlvOm5vbmU6dGxzOmduczIuZ2Nkbi5jbzpbJ2h0dHAvMS4xJ106#14,德国,剩572G,昨35G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpzZXJ2Lnl1Z29jeC5kZXY6bm9uZTp0bHM6d3ctc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#12,德国,剩789G,昨18G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDIwMi4xMjkuMjM2LjE2Mjo0NDM6d3M6L2Nsb3VkOnN0YXRpYy5jb3JuYm9ybi5pbzpub25lOnRsczpoazItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#15,德国,剩698G,昨32G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDplLnNwZWNpYWwubHkuaW86bm9uZTp0bHM6d3ctc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#16,德国,剩788G,昨24G.(0513) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@185.244.209.62:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩725G,昨34G.(0513) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHNwMy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmZsYW1lYmEuaXQ6bm9uZTp0bHM6c3AzLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#11,德国,剩823G,昨9G.(0513) 
 
 int hibernate(void)
 {
