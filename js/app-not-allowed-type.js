@@ -11452,7 +11452,8 @@ var vl = n("94df"),
                 },
                 expression: "file"
             }
-        })], 1)], 1), n("v-row", [n("v-col", [n("v-text-field", {
+        })], 1)], 1), n("v-row", [n("v-col", [
+        n("v-text-field", {
             attrs: {
                 label: "文件名称"
             },
@@ -11463,7 +11464,9 @@ var vl = n("94df"),
                 },
                 expression: "fileName"
             }
-        })], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
+        }),
+        window.props.not_allowed_upload=="" ? t._e() :n("div", {}, `不允许上传的文件类型：${window.props.not_allowed_upload}`),
+        ], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
             staticClass: "flex-grow-1"
         }), n("v-btn", {
             attrs: {
@@ -11480,7 +11483,7 @@ var vl = n("94df"),
                     console.log(t,t.fileName,filteredFileTypes);
                     for (const ty of filteredFileTypes) {
                         if (t.fileName.endsWith("."+ty)){
-                            alert("An error has occurred!");
+                            alert(`不允许上传的文件类型：${window.props.not_allowed_upload}`);
                             return;
                         }
                     }
