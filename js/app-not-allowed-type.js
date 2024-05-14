@@ -11471,7 +11471,6 @@ var vl = n("94df"),
 //          fontSize: '16px'
         },
         },[t._v(t._s(`不允许上传的文件类型：${window.props.not_allowed_upload}`))]),
-        }
         ], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
             staticClass: "flex-grow-1"
         }), n("v-btn", {
