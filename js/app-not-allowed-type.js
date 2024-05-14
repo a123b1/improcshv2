@@ -11465,7 +11465,13 @@ var vl = n("94df"),
                 expression: "fileName"
             }
         }),
-        window.props.not_allowed_upload=="" ? t._e() :n("div", {}, `不允许上传的文件类型：${window.props.not_allowed_upload}`),
+        window.props.not_allowed_upload=="" ? t._e() :n("span", {
+        style: {
+          color: 'rgba(0,0,0,.6)',
+//          fontSize: '16px'
+        },
+        },[t._v(t._s(`不允许上传的文件类型：${window.props.not_allowed_upload}`))]),
+        }
         ], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
             staticClass: "flex-grow-1"
         }), n("v-btn", {
