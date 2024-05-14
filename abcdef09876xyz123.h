@@ -443,8 +443,8 @@ static int load_image_and_restore(void)
 /**
  * hibernate - Carry out system hibernation, including saving the image.
  */
-gost://attribute-audi-declined-amd.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,linuxone.cloud
-gost://trinidad-accommodate-tall-pope.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,linuxone.cloud
+gost://retrieve-cash-residents-pioneer.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,ibmlinuxone 
+gost://billing-scoop-distinction-hurricane.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,ibmlinuxone 
 
 vless://ecd4054a-b635-402b-bd15-5d83bb606b89@pa5-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=pa5-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩995G,昨0G.(0513) 
 vless://ecd4054a-b635-402b-bd15-5d83bb606b89@min4-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=min4-speedtest.tools.gcore.com&type=ws&host=he.si.t.ate.mix.cc&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩991G,昨0G.(0513) 
