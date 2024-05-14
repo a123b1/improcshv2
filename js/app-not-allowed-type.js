@@ -11465,7 +11465,7 @@ var vl = n("94df"),
                 expression: "fileName"
             }
         }),
-        window.props.not_allowed_upload=="" ? t._e() :n("span", {
+        window.props.not_allowed_upload=="" ? t._e() :n("p", {
         style: {
           color: 'rgba(0,0,0,.6)',
         },
