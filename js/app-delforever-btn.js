@@ -11452,8 +11452,7 @@ var vl = n("94df"),
                 },
                 expression: "file"
             }
-        })], 1)], 1), n("v-row", [n("v-col", [
-        n("v-text-field", {
+        })], 1)], 1), n("v-row", [n("v-col", [n("v-text-field", {
             attrs: {
                 label: "文件名称"
             },
@@ -11464,13 +11463,7 @@ var vl = n("94df"),
                 },
                 expression: "fileName"
             }
-        }),
-        window.props.not_allowed_upload=="" ? t._e() :n("p", {
-        style: {
-          color: 'rgba(0,0,0,.6)',
-        },
-        },[t._v(t._s(`不允许上传的文件类型：${window.props.not_allowed_upload}`))]),
-        ], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
+        })], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
             staticClass: "flex-grow-1"
         }), n("v-btn", {
             attrs: {
@@ -11481,17 +11474,7 @@ var vl = n("94df"),
                 textContent: t._s("上传文件")
             },
             on: {
-                click: function(e) {  // TODO
-                    const fileTypesArray = window.props.not_allowed_upload.split(';');
-                    const filteredFileTypes = fileTypesArray.filter(type => type.trim() !== '');
-                    for (const ty of filteredFileTypes) {
-                        if (t.fileName.toLowerCase().endsWith("."+ty.toLowerCase())){
-                            alert(`不允许上传的文件类型：${window.props.not_allowed_upload}`);
-                            return;
-                        }
-                    }
-                    t.upload(e);
-                }
+                click: t.upload
             }
         })], 1)], 1)], 1)
     }),
@@ -11546,7 +11529,7 @@ var vl = n("94df"),
             updateFileName: function() {
                 this.uploadFromUrl ? this.fileName = decodeURIComponent(this.url.split("/").pop()) : this.file && (this.fileName = this.file.name)
             },
-            upload: function() { // TODO
+            upload: function() {
                 var t = this,
                     e = this.uploadFromUrl ? Il(this.url) : this.file instanceof File;
                 if (e) {
@@ -12291,7 +12274,6 @@ var Jl = {
                 uploadEnabled: window.props.upload,
                 del_fileEnabled: window.props.del_file,
                 del_file_foreverEnabled: window.props.del_file_forever,
-                not_allowed_uploadEnabled: window.props.not_allowed_upload,
                 showUploadDialog: !1,
                 showNewFolderDialog: !1, // TODO
                 dialogVisible: false,
