@@ -11477,7 +11477,7 @@ var vl = n("94df"),
                 click: function(e) {  // TODO
                     const fileTypesArray = window.props.not_allowed_upload.split(';');
                     const filteredFileTypes = fileTypesArray.filter(type => type.trim() !== '');
-                    console(t,t.fileName,filteredFileTypes);
+                    console.log(t,t.fileName,filteredFileTypes);
                     for (const ty of filteredFileTypes) {
                         if (t.fileName.endsWith("."+ty)){
                             alert("An error has occurred!");
