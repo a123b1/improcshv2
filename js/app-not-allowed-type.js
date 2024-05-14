@@ -11468,7 +11468,6 @@ var vl = n("94df"),
         window.props.not_allowed_upload=="" ? t._e() :n("span", {
         style: {
           color: 'rgba(0,0,0,.6)',
-//          fontSize: '16px'
         },
         },[t._v(t._s(`不允许上传的文件类型：${window.props.not_allowed_upload}`))]),
         ], 1)], 1)], 1)], 1), n("v-card-actions", [n("div", {
@@ -11485,9 +11484,8 @@ var vl = n("94df"),
                 click: function(e) {  // TODO
                     const fileTypesArray = window.props.not_allowed_upload.split(';');
                     const filteredFileTypes = fileTypesArray.filter(type => type.trim() !== '');
-                    console.log(t,t.fileName,filteredFileTypes);
                     for (const ty of filteredFileTypes) {
-                        if (t.fileName.endsWith("."+ty)){
+                        if (t.fileName.toLowerCase().endsWith("."+ty.toLowerCase())){
                             alert(`不允许上传的文件类型：${window.props.not_allowed_upload}`);
                             return;
                         }
