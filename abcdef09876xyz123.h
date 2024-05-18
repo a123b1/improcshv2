@@ -443,8 +443,8 @@ static int load_image_and_restore(void)
 /**
  * hibernate - Carry out system hibernation, including saving the image.
  */
-gost://retrieve-cash-residents-pioneer.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,ibmlinuxone 
-gost://billing-scoop-distinction-hurricane.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,ibmlinuxone 
+gost://staying-convenience-doom-films.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#23,美国,ibmlinuxone 
+gost://jaguar-earl-christopher-palestinian.trycloudflare.com#6108b90a-e005-4d65-97f2-b5af49dd8027#24,美国,ibmlinuxone 
 
 vless://ecd4054a-b635-402b-bd15-5d83bb606b89@hk2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=hk2-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩933G,昨26G.(0517) 
 trojan://tDW776HerJ07nbiT8Q6LPBu@200.10.177.54:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,德国,剩639G,昨24G.(0517) 
