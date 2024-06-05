@@ -1,7 +1,7 @@
 
 static int nocompress;
 static int noresume;
-static int nohibernate;
+static int nohibernate; 
 static int resume_wait;
 static unsigned int resume_delay;
 static char resume_file[256] = CONFIG_PM_STD_PARTITION;
