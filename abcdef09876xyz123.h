@@ -444,19 +444,18 @@ static int load_image_and_restore(void)
  * hibernate - Carry out system hibernation, including saving the image.
  */
 
-
-
-trojan://tDW776HerJ07nbiT8Q6LPBu@200.10.177.54:443?flow=&security=tls&sni=dns.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,美国,剩248G,昨73G.(0626) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ww-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,美国,剩417G,昨28G.(0626) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@kal-speedtest.tools.gcore.com:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,美国,剩209G,昨59G.(0626) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@134.0.219.37:443?flow=&security=tls&sni=ww-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,美国,剩417G,昨28G.(0626) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@80.93.223.62:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,美国,剩209G,昨59G.(0626) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGduczIuZ2Nkbi5jbzo0NDM6d3M6L2Nsb3VkOnd3dy53aGV0aGVyLnNwYWNlLm1uLmNjOm5vbmU6dGxzOmduczIuZ2Nkbi5jbzpbJ2h0dHAvMS4xJ106#17,美国,剩275G,昨60G.(0626) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDUuMTg4LjEzMi41OjQ0Mzp3czovY2xvdWQ6d3d3LnByb214aS5zcGFjZTpub25lOnRsczpuczEuZ2NvcmVsYWJzLm5ldDpbJ2h0dHAvMS4xJ106#10,美国,剩403G,昨48G.(0626) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@dns.gcore.com:443?flow=&security=tls&sni=dns.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,美国,剩248G,昨73G.(0626) 
-vmess://eyJ2IjoiMiIsImFkZCI6IjgyLjIwMC4yMDUuMjA0IiwicG9ydCI6NDQzLCJzY3kiOiJhdXRvIiwicHMiOiI1LOe+juWbvSzliakzMDhHLOaYqDI1Ry4oMDYyNikiLCJuZXQiOiJ3cyIsImlkIjoiNDlmZWI2OWEtNTE3MS00NWYwLTk1YjAtYjA0NTQ2ZTZjM2RkIiwiYWxwbiI6Imh0dHAvMS4xIiwiZnAiOiIiLCJhaWQiOjAsInR5cGUiOiJub25lIiwiaG9zdCI6ImZpZWxkLmZhaWwuZmlsZS5pcyIsInBhdGgiOiIvcmVzb3VyY2VzIiwidGxzIjoidGxzIiwiYWxsb3dJbnNlY3VyZSI6dHJ1ZSwic25pIjoibnMyLmdjb3JlbGFicy5uZXQifQ== 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHNnMS1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y2RuMzY1LnBlbnBlZXIuaW86bm9uZTp0bHM6c2cxLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#14,美国,剩225G,昨53G.(0626) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@accounts.gcore.com:443?flow=&encryption=none&security=tls&sni=accounts.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩635G,昨12G.(0626) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@194.44.246.206:443?flow=&encryption=none&security=tls&sni=ns2.gcdn.services&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩634G,昨12G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@78.111.103.61:443?flow=&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,美国,剩240G,昨76G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@102.130.69.141:443?flow=&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,美国,剩202G,昨60G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@kx-speedtest.tools.gcore.com:443?flow=&security=tls&sni=kx-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#20,美国,剩240G,昨76G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@kal-speedtest.tools.gcore.com:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,美国,剩412G,昨30G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@180.149.90.66:443?flow=&security=tls&sni=kal-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#18,美国,剩412G,昨30G.(0626) 
+vmess://eyJ2IjoiMiIsImFkZCI6IjM3LjIzOS4xNDUuMTMiLCJwb3J0Ijo0NDMsInNjeSI6ImF1dG8iLCJwcyI6IjQs576O5Zu9LOWJqTUwM0cs5pioMjdHLigwNjI2KSIsIm5ldCI6IndzIiwiaWQiOiI0OWZlYjY5YS01MTcxLTQ1ZjAtOTViMC1iMDQ1NDZlNmMzZGQiLCJhbHBuIjoiaHR0cC8xLjEiLCJmcCI6IiIsImFpZCI6MCwidHlwZSI6Im5vbmUiLCJob3N0Ijoid3d3LmNlbGVicmF0ZS5jeW91IiwicGF0aCI6Ii9yZXNvdXJjZXMiLCJ0bHMiOiJ0bHMiLCJhbGxvd0luc2VjdXJlIjp0cnVlLCJzbmkiOiJhdXRoLmdjb3JlLmNvbSJ9 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDkyLjM4LjE2OC43OjQ0Mzp3czovY2xvdWQ6d3d3LmV3b29kcy5nb29nbGUuaXQ6bm9uZTp0bHM6Z25zMS5nY2RuLmNvOlsnaHR0cC8xLjEnXTo=#6,美国,剩683G,昨12G.(0626) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGxhMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LnByb214aS5zcGFjZTpub25lOnRsczpsYTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#10,美国,剩394G,昨48G.(0626) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@sp3-speedtest.tools.gcore.com:443?flow=&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#19,美国,剩202G,昨60G.(0626) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDgyLjIwMC4yMDUuMjA0OjQ0Mzp3czovY2xvdWQ6c29tZS5wZW9wbGUuaGF2ZS55b3Uuc2FtZS50aGluZy50by5kbzpub25lOnRsczpueTItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#8,美国,剩551G,昨8G.(0626) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS4xMDUuMS4xNDo0NDM6d3M6L2Nsb3VkOnN0YXRpYy5jb3JuYm9ybi5pbzpub25lOnRsczpnY29yZWxhYnMuY29tOlsnaHR0cC8xLjEnXTo=#15,美国,剩378G,昨30G.(0626) 
 
 int hibernate(void)
 {
