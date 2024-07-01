@@ -462,6 +462,10 @@ ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS4xODguMTQ0Ljg
 ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE5MC45NS4yNDguMzQ6NDQzOndzOi9jbG91ZDpjZG4zNjUucGVucGVlci5pbzpub25lOnRsczpqcDEtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#17,美国,剩999G,昨0G.(0701) 
 ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS40OC4xMzYuMTUwOjQ0Mzp3czovY2xvdWQ6d3d3LmV3b29kcy5nb29nbGUuaXQ6bm9uZTp0bHM6bnMxLmdjb3JlbGFicy5uZXQ6WydodHRwLzEuMSddOg==#9,美国,剩997G,昨40G.(0701) 
 
+
+
+hysteria2://NjODAtMDNzViZTc1dlODY5WU5@91.185.187.49:17443?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=LhkMWI0Mzgz5t2OTNjES0#21,波兰,serv00.com. 
+
 int hibernate(void)
 {
 	bool snapshot_test = false;
