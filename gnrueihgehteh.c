@@ -33,7 +33,7 @@ static int _get_more_prng_bytes(struct prng_context *ctx, int cont_test)
 			hexdump("tmp stage 0: ", tmp, DEFAULT_BLK_SZ);
 			break;
 		case 1:
-
+/**/
 		case 2:
 			/*
 			 * First check that we didn't produce the same
